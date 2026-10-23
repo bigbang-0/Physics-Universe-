@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" href="image/logo.png">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cinzel:wght@400..900&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=STIX+Two+Math&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--  ============= Header containing the Top Nav Bar ====================== -->
+    <header class="top-navbar">
+        <a class="logo" href="index.html">
+            <img src="image/logo.png" alt="">
+            <h1>Physic Universe</h1>
+        </a>
+
+        <form class="form" action="">
+            <div class="search-wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="Search" type="text" name="text" placeholder="Search topics, courses, or concepts...." required>
+            </div>
+        </form>
+
+        <ul>
+            <li class="dropdown-container">
+                <a href="hero.html" class="dropdown-tittle"><i id="web" class="fa-solid fa-globe"></i> English <i id="thearrow" class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="hero.html">English</a></li>
+                    <li><a href="hero.html">Español</a></li>
+                    <li><a href="hero.html">中文</a></li>
+                    <li><a href="hero.html">हिन्दी</a></li>
+                    <li><a href="hero.html">Français</a></li>
+                    <li><a href="hero.html">العربية</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="last-nav">
+            <a class="cal" href="calculator.html"><i class="fa-light fa-calculator"></i></a>
+
+            <section class="profile">
+                <img src="image/Dashboard/avater.png" alt="">
+
+                <div>
+                    <p>Welcome Back,</p>
+                    <h3>BigBang</h3>
+                </div>
+            </section>
+
+            <a class="logout" href="login.html">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> 
+                <h4>Log out</h4>
+            </a>
+        </div>
+    </header>
+    
+    <!-- ======================= Slide Bar Navigation ================== -->
+    <aside class="sidebar">
+        <section class="sidebar-holder">
+            <div class="primary-data">
+                <a href="index.html"><i class="fa-solid fa-house"></i> <p>Home</p></a>
+                <a href=""><i class="fa-solid fa-user"></i> <p>Pofile</p></a>
+                <a href=""><i class="fa-solid fa-user-pen"></i><p>Account Bio</p></a>
+            </div>
+
+            <div class="secondary-data">
+                <ul>
+                    <li class="SB-dropdown-container" >
+                        <a href="dashboard.html" class="SB-dropdown-tittle"><i class="fa-solid fa-graduation-cap unqiue-icon"></i> Courses <i class="fa-solid fa-angle-down arrow-icon"></i></a>
+                        <ul class="SB-dropdown-menu">
+                            <li><a href="hero.html">Secondary School Courses</a></li>
+                            <li><a href="hero.html">B.sc Courses</a></li>
+                            <li><a href="hero.html">M.sc Courses</a></li>
+                            <li><a href="hero.html">Past Question</a></li>
+                            <li><a href="hero.html">Problem Set</a></li>
+                            <li><a href="hero.html">Exam Prep</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                
+                <ul>
+                    <li class="SB-dropdown-container">
+                        <a href="textbook.html" class="SB-dropdown-tittle"><i class="fa-duotone fa-solid fa-books unqiue-icon"></i> Textboox Library <i class="fa-solid fa-angle-down arrow-icon"></i></a>
+                        <ul class="SB-dropdown-menu">
+                            <li><a href="hero.html">Secondary School TextBooks</a></li>
+                            <li><a href="hero.html">B.sc TextBooks</a></li>
+                            <li><a href="hero.html">M.sc TextBooks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <ul>
+                    <li class="SB-dropdown-container">
+                        <a href="video.html" class="SB-dropdown-tittle"><i class="fa-brands fa-youtube unqiue-icon"></i> Video Lessons <i class="fa-solid fa-angle-down arrow-icon"></i></a>
+                        <ul class="SB-dropdown-menu">
+                            <li><a href="hero.html">Secondary School Videos Tutorials</a></li>
+                            <li><a href="hero.html">B.sc Video Tutorials</a></li>
+                            <li><a href="hero.html">M.sc Video Tutorials</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <ul>
+                    <li class="SB-dropdown-container active">
+                        <a href="calculator.html" class="SB-dropdown-tittle"><i class="fa-light fa-calculator unqiue-icon"></i> Calculator </i></a>
+                    </li>
+                </ul>
+
+
+                <ul>
+                    <li class="SB-dropdown-container">
+                        <a href="progess.html" class="SB-dropdown-tittle"><i class="fa-solid fa-chart-simple unqiue-icon"></i> My Progress </i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="terms">
+                <a href="index.html">Home</a>
+                <p>|</p>
+                <a href="">Contact</a>
+                <p>|</p>
+                <a href="">Terms</a>
+            </div>
+        </section>
+    </aside>
+    
+
+    <!-- /* ============================== Dashboard Main Content ====================== */ -->
+    <main class="dashboard-content">
+        <!-- /* ========== Slider Hero Images ================ */ -->
+        <section class="slider">
+            <div id="heroSlider" class="slider-flex">
+                <figure class="slider-container">
+                    <img src="image/Dashboard/cal1.png" alt="">
+                    <!-- <figcaption>
+                        <h1>learn Physics <br> <span>Understand the Universe</span></h1>
+                        <p>Build your skills, master key concepts, and explore the law <br>that shape our world and beyond.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/cal2.png" alt="">
+                    <!-- <figcaption>
+                        <h1>Explore the <br> <span>Laws of the Cosmos.</span></h1>
+                        <p>From E = mc² to Newton's laws, understand the fundamental <br> equations that govern everything in our universe.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/cal5.png" alt="">
+                    <!-- <figcaption>
+                        <h1>Where Motion <br> <span>Meets Momentum.</span></h1>
+                        <p>Explore the elegant physics of collisions, energy transfer, and <br> conservation laws that govern every interaction in the universe.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/cal4.png" alt="">
+                    <!-- <figcaption>
+                        <h1>Launch Your <br> <span>Physics Journey.</span></h1>
+                        <p>From the first principles of motion to the edge of the cosmos, <br>take off with lessons designed to make physics click.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/cal3.png" alt="">
+                    <!-- <figcaption>
+                        <h1>Master the <br> <span>Forces of Nature.</span></h1>
+                        <p>Dive into the mechanics of gravity, motion, and <br>energy that shape every star, planet, and galaxy in existence.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+            </div>
+
+            <div class="slider-btn">
+                <button id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+
+
+        <!--=================== My Stats ==================  -->
+        <section class="horizontal-ray">
+            <div class="horizontal-ray-flex">
+                <span> <a href=""> <i class="fa-light fa-calculator"></i>  8 Formulas Available</a></span> <span><a href=""><i class="fa-light fa-bolt"></i>  Instant Calculations</a></span> <span><a href=""><i class="fa-light fa-gift"></i>   Free Forever</a></span> <span><a href=""><i class="fa-regular fa-square-root-variable"></i> 47 Problems Solved</a></span>
+
+                <span> <a href=""> <i class="fa-light fa-calculator"></i>  8 Formulas Available</a></span> <span><a href=""><i class="fa-light fa-bolt"></i>  Instant Calculations</a></span> <span><a href=""><i class="fa-light fa-gift"></i>   Free Forever</a></span> <span><a href=""><i class="fa-regular fa-square-root-variable"></i> 47 Problems Solved</a></span>
+            </div>
+        </section>
+
+
+        <!-- ================== Calculator ============ -->
+        <section class="calculator-bg">
+            <div class="cal-heading">
+                <div class="cal-head-icon"><i class="fa-duotone fa-light fa-calculator-simple"></i></div>
+
+                <div class="cal-head-texts">
+                    <h2>Physics <span>Calculator</span></h2>
+                    <p>Solve physics problems with ease. Select a formula, enter the value, and get instant results.</p>
+                </div>
+            </div>
+
+            <div class="cal-body-flex">   
+                <section class="cal-cards-grid"> 
+                    <div id="card-force" class="cal-card active">
+                        <i class="fa-solid fa-person-running cal-icon"></i>
+                            
+                        <div class="cal-formulars">
+                            <h3>F = ma</h3>
+                            <p>Newton's Seconds Law</p>
+                        </div>
+                    </div>
+
+                    <div id="card-emc" class="cal-card">
+                            <i class="fa-solid fa-bolt-lightning cal-icon"></i>
+                            
+                        <div class="cal-formulars">
+                            <h3>E = mc²</h3>
+                            <p>Mass-Energy Equivalance</p>
+                        </div>
+                    </div>
+
+                    <div id="card-velocity" class="cal-card">
+                            <i class="fa-sharp fa-solid fa-meteor cal-icon"></i>
+                            
+                        <div class="cal-formulars">
+                            <h3>V = u + at</h3>
+                            <p>Kinematics</p>
+                        </div>
+                    </div>
+
+                    <div id="card-wave-equation" class="cal-card">
+                            <i class="fa-regular fa-wave-square cal-icon"></i>
+                            
+                        <div class="cal-formulars">
+                            <h3>V = fλ</h3>
+                            <p>Wave Equation</p>
+                        </div>
+                    </div>
+
+                    <div id="card-kinetic-energy" class="cal-card">
+                            <i class="fa-regular fa-person-skiing cal-icon"></i>
+                            
+                        <div class="cal-formulars">
+                            <h3>KE = ½mv²</h3>
+                            <p>Kinetic Energy</p>
+                        </div>
+                    </div>
+
+                    <div id="card-ohm's-law" class="cal-card">
+                        <i class="fa-solid fa-bolt cal-icon" ></i>
+                            
+                        <div class="cal-formulars">
+                            <h3>V = IR</h3>
+                            <p>Ohm's Law</p>
+                        </div>
+                    </div>
+
+                    <div id="card-gravitational-law" class="cal-card">
+                        <i class="fa-sharp fa-solid fa-meteor cal-icon"></i>
+                            
+                        <div class="cal-formulars">
+                           <h3>
+                                F = G 
+                                <span class="fraction">
+                                    <span class="numerator">m₁m₂</span>
+                                    <span class="denominator">r²</span>
+                                </span>
+                           </h3>
+                            <p>Gravitational Froce</p>
+                        </div>
+                    </div>
+
+                    <div id="card-heat-transfer" class="cal-card">
+                        <i class="fa-thin fa-temperature-high cal-icon"></i>
+                            
+                        <div class="cal-formulars">
+                            <h3>Q = mcΔT</h3>
+                            <p>Heat Transfer</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- =========== Calculator Input Right Side ============== -->
+                 <!-- =========== F = ma ============== -->
+                <section class="cal-input-body form-force active" id="form-force">
+                    <div class="cal-input-bg">
+                        <section class="uqiue-input">
+                            <div class="cal-input-head">
+                                <i class="fa-solid fa-person-running cal-icon"></i>
+                            
+                                <div class="cal-formulars-body">
+                                    <h3>F = ma</h3>
+                                    <p>Newton's Seconds Law</p>
+                                </div>
+                            </div>
+
+                            <div class="cal-input-mid">
+                                <p>
+                                    The force (f) equals the mass (m) times <br>the acceleration (a).
+                                </p>
+                                
+                                <form action="" class="cal-form" type="button">
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="mass">Mass (m)</label>
+                                            <input id="mass" type="number" name="mass" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="mass-dropdown-mass"></label>
+                                            <select id="mass-dropdown-mass" class="mass-flex-downdown-options" required>
+                                                <option value="disabled selected">kg</option>
+                                                <option value="g">g</option>
+                                                <option value="mg">mg</option>                                    
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="acceleration">Acceleration (a)</label>
+                                            <input id="acceleration" type="number" name="acceleration" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="mass-dropdown-acceleration"></label>
+                                            <select id="mass-dropdown-acceleration" class="mass-flex-downdown-options" required>
+                                                <option value="disabled selected">m/s² </option>
+                                                <option value="cm/s²">cm/s²</option>
+                                                <option value="km/h²">km/h²</option>                                    
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div id="calculateBtn" class="submit-input">
+                                        <i class="fa-light fa-calculator"></i> <h2>Calculate</h2>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- /* ========= End Section Of Cal Input ========= */ -->
+                            <div class="cal-output-end">
+                                <i class="fa-thin fa-bullseye-arrow"></i>
+
+                                <div class="cal-output">
+                                    <p>Result (force)</p>
+                                    <output id="forceResult"> 0 N</output>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- =========== E = mc*c ============== -->
+                <section class="cal-input-body form-emc" id="form-emc">
+                    <div class="cal-input-bg">
+                        <section class="uqiue-input">
+                            <div class="cal-input-head">
+                                <i class="fa-solid fa-bolt cal-icon"></i>
+                            
+                                <div class="cal-formulars-body">
+                                    <h3>E = mc²</h3>
+                                    <p>Mass-Energy Equivalence</p>
+                                </div>
+                            </div>
+
+                            <div class="cal-input-mid">
+                                <p>
+                                   The energy (E) equals the mass (m) times <br>the speed of light squared (c²).
+                                </p>
+                                
+                                <form action="" class="cal-form" type="button">
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="emcMass">Mass (m)</label>
+                                            <input id="emcMass" type="number" name="mass" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="emc-dropdown-mass"></label>
+                                            <select id="emc-dropdown-mass" class="mass-flex-downdown-options" required>
+                                                <option value="kg" disabled selected>kg</option>
+                                                <option value="g">g</option>
+                                                <option value="mg">mg</option>                                    
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="speed-of-light">Speed 0f Light (as multiple of c)</label>
+                                            <input id="speed-of-light" type="number" name="speed-of-light" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="emc-dropdown-speed-of-light"></label>
+                                            <select id="emc-dropdown-acceleration" class="mass-flex-downdown-options" required>
+                                                <option value="m/s" selected>m/s</option>                                                          
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div id="emcBtn" class="submit-input">
+                                        <i class="fa-light fa-calculator"></i> <h2>Calculate</h2>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- /* ========= End Section Of Cal Input ========= */ -->
+                            <div class="cal-output-end">
+                                <i class="fa-thin fa-bullseye-arrow"></i>
+
+                                <div class="cal-output">
+                                    <p>Result (Enegry)</p>
+                                    <output id="emcResult"> 0 J</output>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- =========== V = u * at ============== -->
+                <section class="cal-input-body form-velocity" id="form-velocity">
+                    <div class="cal-input-bg">
+                        <section class="uqiue-input">
+                            <div class="cal-input-head">
+                               <i class="fa-sharp fa-solid fa-meteor cal-icon"></i>
+                            
+                                <div class="cal-formulars-body">
+                                    <h3>V = u + at</h3>
+                                    <p>Kinematics</p>
+                                </div>
+                            </div>
+
+                            <div class="cal-input-mid">
+                                <p>
+                                   The final velocity (V) equals the initial velocity (u) <br> plus the acceleration (a) times the time (t).
+                                </p>
+                                
+                                <form action="" class="cal-form" type="button">
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="initial-velocity">Initial Velocity (u)</label>
+                                            <input id="initial-velocity" type="number" name="initial-velocity" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="velocity-dropdown-initial-velocity"></label>
+                                            <select id="velocity-dropdown-initial-velocity" class="mass-flex-downdown-options" required>
+                                                <option value="m/s" disabled selected>m/s</option>
+                                                <option value="cm/s">cm/s</option>
+                                                <option value="km/h">km/h</option>                                    
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="velocity-accel">Constant Acceleration (m/s²)</label>
+                                            <input id="velocity-accel" type="number" name="velocity-accel" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="velocity-dropdown-const-accel"></label>
+                                            <select id="velocity-dropdown-const-accel" class="mass-flex-downdown-options" required>
+                                                <option value="selected">m/s²</option>                                                          
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="velocity-time">Time (s)</label>
+                                            <input id="velocity-time" type="number" name="velocity-time" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="velocity-dropdown-time"></label>
+                                            <select id="velocity-dropdown-time" class="mass-flex-downdown-options" required>
+                                                <option value="s" selected>s</option> 
+                                                <option value="mins">mins</option>                                                          
+                                                <option value="hts">hrs</option> 
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div id="velocityBtn" class="submit-input">
+                                        <i class="fa-light fa-calculator"></i> <h2>Calculate</h2>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- /* ========= End Section Of Cal Input ========= */ -->
+                            <div class="cal-output-end">
+                                <i class="fa-thin fa-bullseye-arrow"></i>
+
+                                <div class="cal-output">
+                                    <p>Result (Velocity)</p>
+                                    <output id="velocityResult"> 0 m/s</output>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- =========== v = f*λ ============== -->
+                <section class="cal-input-body form-wave-equation" id="form-wave-equation">
+                    <div class="cal-input-bg">
+                        <section class="uqiue-input">
+                            <div class="cal-input-head">
+                                <i class="fa-regular fa-wave-square cal-icon"></i>
+                            
+                                <div class="cal-formulars-body">
+                                    <h3>V = fλ</h3>
+                                    <p>Wave Equation</p>
+                                </div>
+                            </div>
+
+                            <div class="cal-input-mid">
+                                <p>
+                                   The wave velocity (V) equals the frequency (f) <br> times the wavelength (λ).
+                                </p>
+                                
+                                <form action="" class="cal-form" type="button">
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="waveFrequency">frequency (f)</label>
+                                            <input id="waveFrequency" type="number" name="waveFrequency" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="wave-dropdown-frequency"></label>
+                                            <select id="wave-dropdown-frequency" class="mass-flex-downdown-options" required>
+                                                <option value="Hz" disabled selected>Hz</option>
+                                                <option value="KHz">KHz</option>
+                                                <option value="MHz">MHz</option>                                    
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="wavelength">Wavelength (λ)</label>
+                                            <input id="wavelength" type="number" name="wavelength" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="wave-dropdown-wavelength"></label>
+                                            <select id="wave-dropdown-wavelength" class="mass-flex-downdown-options" required>
+                                                <option value="m" selected>m</option>    
+                                                <option value="cm">cm</option>    
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div id="waveBtn" class="submit-input">
+                                        <i class="fa-light fa-calculator"></i> <h2>Calculate</h2>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- /* ========= End Section Of Cal Input ========= */ -->
+                            <div class="cal-output-end">
+                                <i class="fa-thin fa-bullseye-arrow"></i>
+
+                                <div class="cal-output">
+                                    <p>Result (Velocity)</p>
+                                    <output id="waveResult"> 0 m/s</output>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- =========== KE = 1/2 mv² ============== -->
+                <section class="cal-input-body form-emc" id="form-kinetic-energy">
+                    <div class="cal-input-bg">
+                        <section class="uqiue-input">
+                            <div class="cal-input-head">
+                                <i class="fa-regular fa-person-skiing cal-icon"></i>
+                            
+                                <div class="cal-formulars-body">
+                                    <h3>KE = ½mv²</h3>
+                                    <p>Kinetic Energy</p>
+                                </div>
+                            </div>
+
+                            <div class="cal-input-mid">
+                                <p>
+                                   The kinetic energy (KE) equals one-half the <br> mass (m) 
+                                    times the velocity squared (v²).
+                                </p>
+                                
+                                <form action="" class="cal-form" type="button">
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="KEMass">Mass (m)</label>
+                                            <input id="KEMass" type="number" name="KEmass" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="KE-dropdown-mass"></label>
+                                            <select id="KE-dropdown-mass" class="mass-flex-downdown-options" required>
+                                                <option value="kg" selected>kg</option>
+                                                <option value="g">g</option>
+                                                <option value="mg">mg</option>                                    
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="KE-Velocity">Velocity (v)</label>
+                                            <input id="KE-Velocity" type="number" name="KE-Velocity" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="KE-dropdown-velocity"></label>
+                                            <select id="KE-dropdown-velocity" class="mass-flex-downdown-options" required>
+                                                <option value="m/s" selected>m/s</option>                                                          
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div id="KEBtn" class="submit-input">
+                                        <i class="fa-light fa-calculator"></i> <h2>Calculate</h2>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- /* ========= End Section Of Cal Input ========= */ -->
+                            <div class="cal-output-end">
+                                <i class="fa-thin fa-bullseye-arrow"></i>
+
+                                <div class="cal-output">
+                                    <p>Result (Enegry)</p>
+                                    <output id="KEResult"> 0 J</output>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- =========== V = IR ============== -->
+                <section class="cal-input-body form-ohm's-law" id="form-ohm's-law">
+                    <div class="cal-input-bg">
+                        <section class="uqiue-input">
+                            <div class="cal-input-head">
+                                <i class="fa-solid fa-bolt cal-icon" ></i>
+                            
+                                <div class="cal-formulars-body">
+                                    <h3>V = IR</h3>
+                                    <p>Ohm's Law</p>
+                                </div>
+                            </div>
+
+                            <div class="cal-input-mid">
+                                <p>
+                                   The voltage (V) equals the current (I) <br>
+                                    times the resistance (R).
+                                </p>
+                                
+                                <form action="" class="cal-form" type="button">
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="ohm'sCurrent">Current (I)</label>
+                                            <input id="ohm'sCurrent" type="number" name="ohm'sCurrent" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="ohm-dropdown-current"></label>
+                                            <select id="emc-dropdown-mass" class="mass-flex-downdown-options" required>
+                                                <option value="A" selected>A</option>
+                                                <option value="mA">mA</option>
+                                                <option value="μA">μA</option>                                    
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="ohm's-Resistance">Conductor Resistance (R)</label>
+                                            <input id="ohm's-Resistance" type="number" name="ohm's-Resistance" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="emc-dropdown-speed-of-light"></label>
+                                            <select id="emc-dropdown-acceleration" class="mass-flex-downdown-options" required>
+                                                <option value="Ω" selected>Ω</option>   
+                                                <option value="kΩ">kΩ</option>                                                          
+                                                <option value="MΩ">MΩ</option>                                                          
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div id="ohm'sBtn" class="submit-input">
+                                        <i class="fa-light fa-calculator"></i> <h2>Calculate</h2>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- /* ========= End Section Of Cal Input ========= */ -->
+                            <div class="cal-output-end">
+                                <i class="fa-thin fa-bullseye-arrow"></i>
+
+                                <div class="cal-output">
+                                    <p>Result (Voltage)</p>
+                                    <output id="ohm'sResult"> 0 volts</output>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- =========== F = G(mn)/r² ============== -->
+                <section class="cal-input-body gravitational-law" id="form-gravitational-law">
+                    <div class="cal-input-bg">
+                        <section class="uqiue-input">
+                            <div class="cal-input-head">
+                               <i class="fa-sharp fa-solid fa-meteor cal-icon"></i>
+                            
+                                <div class="cal-formulars-body">
+                                    <h3>
+                                        F = G 
+                                        <span class="fraction">
+                                            <span class="numerator">m₁m₂</span>
+                                            <span class="denominator">r²</span>
+                                        </span>
+                                    </h3>
+                                    <p>Gravitational Froce</p>
+                                </div>
+                            </div>
+
+                            <div class="cal-input-mid">
+                                <p>
+                                   The gravitational force (F) equals the gravitational <br> constant (G) 
+                                    times the product of both masses <br> (m₁m₂) divided by the distance squared (r²).
+                                </p>
+                                
+                                <form action="" class="cal-form" type="button">
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="GL-mass1">Mass of 1st Body (m1)</label>
+                                            <input id="GL-mass1" type="number" name="GL-mass1" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="GL-dropdown-mass1"></label>
+                                            <select id="GL-dropdown-mass1" class="mass-flex-downdown-options" required>
+                                                <option value="kg" selected>k/g</option>
+                                                <option value="g">g</option>
+                                                <option value="ton">tonne</option>                                    
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="GL-mass2">Mass of 2nd Body (m2)</label>
+                                            <input id="GL-mass2" type="number" name="GL-mass2" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="GL-dropdown-mass2"></label>
+                                            <select id="GL-dropdown-mass2" class="mass-flex-downdown-options" required>
+                                                <option value="kg" selected>k/g</option>
+                                                <option value="g">g</option>
+                                                <option value="ton">tonne</option>                                                         
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="GL-distance">Distance between both bodies (r)</label>
+                                            <input id="GL-distance" type="number" name="GL-distance" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="GL-dropdown-distance"></label>
+                                            <select id="GL-dropdown-distance" class="mass-flex-downdown-options" required>
+                                                <option value="m" selected>m</option> 
+                                                <option value="cm">cm</option>                                                          
+                                                <option value="nm">nm</option> 
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div id="GLBtn" class="submit-input">
+                                        <i class="fa-light fa-calculator"></i> <h2>Calculate</h2>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- /* ========= End Section Of Cal Input ========= */ -->
+                            <div class="cal-output-end">
+                                <i class="fa-thin fa-bullseye-arrow"></i>
+
+                                <div class="cal-output">
+                                    <p>Result (Force)</p>
+                                    <output id="GLResult"> 0 N</output>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- =========== Q = mc/T ============== -->
+                <section class="cal-input-body heat-transfer" id="form-heat-transfer">
+                    <div class="cal-input-bg">
+                        <section class="uqiue-input">
+                            <div class="cal-input-head">
+                               <i class="fa-thin fa-temperature-high cal-icon"></i>
+                            
+                                <div class="cal-formulars-body">
+                                    <h3>Q = mcΔT</h3>
+                                    <p>Heat Transfer</p>
+                                </div>
+                            </div>
+
+                            <div class="cal-input-mid">
+                                <p>
+                                   The heat energy (Q) equals the mass (m) times <br> the specific heat capacity (c) 
+                                    times  the change <br> in temperature (ΔT).
+                                </p>
+                                
+                                <form action="" class="cal-form" type="button">
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="HT-mass">Mass of the Body (m)</label>
+                                            <input id="HT-mass" type="number" name="HT-mass" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="HT-dropdown-mass"></label>
+                                            <select id="HT-dropdown-mass" class="mass-flex-downdown-options" required>
+                                                <option value="kg" selected>k/g</option>
+                                                <option value="g">g</option>
+                                                <option value="ton">tonne</option>                                    
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="HT-specific-heat-capacity">Specific Heat Capacity (c)</label>
+                                            <input id="HT-specific-heat-capacity" type="number" name="HT-specific-heat-capacity" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="HT-dropdown-SHC"></label>
+                                            <select id="HT-dropdown-SHC" class="mass-flex-downdown-options" required>
+                                                <option value="kg" selected>J/kg°C</option>
+                                                <option value="g">J/kg·K</option>
+                                                <option value="ton">kJ/kg°C</option>                                                         
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div class="mass-flex">
+                                        <section class="mass-flex-text">
+                                            <label for="HT-temp-different">Change in Temperature (Δ)</label>
+                                            <input id="HT-temp-different" type="number" name="HT-temp-different" placeholder="Enter value">
+                                        </section>
+
+                                        <section class="mass-flex-downdown">
+                                            <label for="HT-dropdown-temp-different"></label>
+                                            <select id="HT-dropdown-temp-different" class="mass-flex-downdown-options" required>
+                                                <option value="c" selected>°C</option> 
+                                                <option value="K">K</option>                                                          
+                                                <option value="F">°F</option> 
+                                            </select>
+                                        </section>
+                                    </div>
+
+                                    <div id="HTBtn" class="submit-input">
+                                        <i class="fa-light fa-calculator"></i> <h2>Calculate</h2>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- /* ========= End Section Of Cal Input ========= */ -->
+                            <div class="cal-output-end">
+                                <i class="fa-thin fa-bullseye-arrow"></i>
+
+                                <div class="cal-output">
+                                    <p>Result (Force)</p>
+                                    <output id="HTResult"> 0 J</output>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </section>
+        
+        <!-- ============= Physics Constants Reference ============= -->
+        <section class="constants-section">
+            <div class="constants-header">
+                <h2><i class="fa-solid fa-flask"></i> Fundamental Constants</h2>
+                <p>Key values used across all physics calculations</p>
+            </div>
+
+            <div class="constants-grid">
+                <div class="constant-card">
+                    <span class="constant-symbol">c</span>
+                    <span class="constant-name">Speed of Light</span>
+                    <span class="constant-value">3.00 × 10⁸ <em>m/s</em></span>
+                </div>
+                <div class="constant-card">
+                    <span class="constant-symbol">G</span>
+                    <span class="constant-name">Gravitational Constant</span>
+                    <span class="constant-value">6.67 × 10⁻¹¹ <em>N·m²/kg²</em></span>
+                </div>
+                <div class="constant-card">
+                    <span class="constant-symbol">g</span>
+                    <span class="constant-name">Gravity (Earth)</span>
+                    <span class="constant-value">9.81 <em>m/s²</em></span>
+                </div>
+                <div class="constant-card">
+                    <span class="constant-symbol">h</span>
+                    <span class="constant-name">Planck's Constant</span>
+                    <span class="constant-value">6.63 × 10⁻³⁴ <em>J·s</em></span>
+                </div>
+                <div class="constant-card">
+                    <span class="constant-symbol">k<sub>B</sub></span>
+                    <span class="constant-name">Boltzmann Constant</span>
+                    <span class="constant-value">1.38 × 10⁻²³ <em>J/K</em></span>
+                </div>
+                <div class="constant-card">
+                    <span class="constant-symbol">e</span>
+                    <span class="constant-name">Elementary Charge</span>
+                    <span class="constant-value">1.60 × 10⁻¹⁹ <em>C</em></span>
+                </div>
+                <div class="constant-card">
+                    <span class="constant-symbol">N<sub>A</sub></span>
+                    <span class="constant-name">Avogadro's Number</span>
+                    <span class="constant-value">6.02 × 10²³ <em>mol⁻¹</em></span>
+                </div>
+                <div class="constant-card">
+                    <span class="constant-symbol">R</span>
+                    <span class="constant-name">Ideal Gas Constant</span>
+                    <span class="constant-value">8.31 <em>J/(mol·K)</em></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="physic-footer">
+            <div class="footer-container">
+                <div class="footer-column brand-column">
+                    <h3>Physics Universe</h3>
+                    <p>Mastering the laws that govern the cosmos, one lesson at a time.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dashboard.html">Courses</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="video.html">Video Lessons</a></li>
+                        <li><a href="textbook.html">Textbook Library</a></li>
+                        <li><a href="dashboard.html">Past Questions</a></li>
+                        <li><a href="calculator.html">Physics Calculator</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Get in Touch</h4>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-envelope"></i> support@physicuniverse.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +234 814 841 6639</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Kaduna, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Physics Universe. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="calculator.js"></script>
+</body>
+
+
+<script>
+        // ==========================================
+    // BLOCK 1: Variables & Element Selectors
+    // ==========================================
+    const heroSlider = document.getElementById('heroSlider');
+    const nextSlideBtn = document.getElementById('nextBtn');
+    const prevSlideBtn = document.getElementById('prevBtn');
+    const dots = document.querySelectorAll('.slider-dots .dot');
+
+    const slideWidth = 1462;
+
+    // ==========================================
+    // BLOCK 2: Functions
+    // ==========================================
+
+    // The auto-slide logic
+    function autoSlide() {
+        const maxScroll = heroSlider.scrollWidth - heroSlider.clientWidth;
+        if (heroSlider.scrollLeft >= maxScroll - 10) {
+            // We're at the end, jump back to the start
+            heroSlider.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            // Keep sliding right
+            heroSlider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+        }
+    }
+
+    // Update the active pagination dot
+    function updateDots() {
+        const currentIndex = Math.round(heroSlider.scrollLeft / slideWidth);
+        dots.forEach((dot, index) => {
+            dot.classList.remove('active');
+            if (index === currentIndex) {
+                dot.classList.add('active');
+            }
+        });
+    }
+
+    // Restart the timer (used after user clicks)
+    function resetTimer() {
+        clearInterval(slideTimer);
+        slideTimer = setInterval(autoSlide, 4000);
+    }
+
+    // ==========================================
+    // BLOCK 3: The Timer
+    // ==========================================
+    let slideTimer = setInterval(autoSlide, 4000);   // Every 4 seconds
+
+    // ==========================================
+    // BLOCK 4: Event Listeners
+    // ==========================================
+
+    // Next button
+    nextSlideBtn.addEventListener('click', () => {
+        heroSlider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+        resetTimer();
+    });
+
+    // Prev button
+    prevSlideBtn.addEventListener('click', () => {
+        heroSlider.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+        resetTimer();
+    });
+
+    
+    heroSlider.addEventListener('scroll', updateDots);
+
+    // Click a dot to jump to that slide
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            heroSlider.scrollTo({
+                left: index * slideWidth,
+                behavior: 'smooth'
+            });
+            resetTimer();
+        });
+    });
+
+    // Pause on hover, resume on leave
+    heroSlider.addEventListener('mouseenter', () => clearInterval(slideTimer));
+    heroSlider.addEventListener('mouseleave', () => slideTimer = setInterval(autoSlide, 4000));
+
+    updateDots();
+</script>
+</html>

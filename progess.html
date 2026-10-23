@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Progress</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" href="image/logo.png">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cinzel:wght@400..900&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=STIX+Two+Math&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--  ============= Header containing the Top Nav Bar ====================== -->
+    <header class="top-navbar">
+        <a class="logo" href="index.html">
+            <img src="image/logo.png" alt="">
+            <h1>Physic Universe</h1>
+        </a>
+
+        <form class="form" action="">
+            <div class="search-wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="Search" type="text" name="text" placeholder="Search topics, courses, or concepts...." required>
+            </div>
+        </form>
+
+        <ul>
+            <li class="dropdown-container">
+                <a href="hero.html" class="dropdown-tittle"><i id="web" class="fa-solid fa-globe"></i> English <i id="thearrow" class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="hero.html">English</a></li>
+                    <li><a href="hero.html">Español</a></li>
+                    <li><a href="hero.html">中文</a></li>
+                    <li><a href="hero.html">हिन्दी</a></li>
+                    <li><a href="hero.html">Français</a></li>
+                    <li><a href="hero.html">العربية</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="last-nav">
+            <a class="cal" href="calculator.html"><i class="fa-light fa-calculator"></i></a>
+
+            <section class="profile">
+                <img src="image/Dashboard/avater.png" alt="">
+
+                <div>
+                    <p>Welcome Back,</p>
+                    <h3>BigBang</h3>
+                </div>
+            </section>
+
+            <a class="logout" href="login.html">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> 
+                <h4>Log out</h4>
+            </a>
+        </div>
+    </header>
+    
+    <!-- ======================= Slide Bar Navigation ================== -->
+    <aside class="sidebar">
+        <section class="sidebar-holder">
+            <div class="primary-data">
+                <a href="index.html"><i class="fa-solid fa-house"></i> <p>Home</p></a>
+                <a href=""><i class="fa-solid fa-user"></i> <p>Pofile</p></a>
+                <a href=""><i class="fa-solid fa-user-pen"></i><p>Account Bio</p></a>
+            </div>
+
+            <div class="secondary-data">
+                <ul>
+                    <li class="SB-dropdown-container" >
+                        <a href="dashboard.html" class="SB-dropdown-tittle"><i class="fa-solid fa-graduation-cap unqiue-icon"></i> Courses <i class="fa-solid fa-angle-down arrow-icon"></i></a>
+                        <ul class="SB-dropdown-menu">
+                            <li><a href="hero.html">Secondary School Courses</a></li>
+                            <li><a href="hero.html">B.sc Courses</a></li>
+                            <li><a href="hero.html">M.sc Courses</a></li>
+                            <li><a href="hero.html">Past Question</a></li>
+                            <li><a href="hero.html">Problem Set</a></li>
+                            <li><a href="hero.html">Exam Prep</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                
+                <ul>
+                    <li class="SB-dropdown-container">
+                        <a href="textbook.html" class="SB-dropdown-tittle"><i class="fa-duotone fa-solid fa-books unqiue-icon"></i> Textboox Library <i class="fa-solid fa-angle-down arrow-icon"></i></a>
+                        <ul class="SB-dropdown-menu">
+                            <li><a href="hero.html">Secondary School TextBooks</a></li>
+                            <li><a href="hero.html">B.sc TextBooks</a></li>
+                            <li><a href="hero.html">M.sc TextBooks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <ul>
+                    <li class="SB-dropdown-container">
+                        <a href="video.html" class="SB-dropdown-tittle"><i class="fa-brands fa-youtube unqiue-icon"></i> Video Lessons <i class="fa-solid fa-angle-down arrow-icon"></i></a>
+                        <ul class="SB-dropdown-menu">
+                            <li><a href="hero.html">Secondary School Videos Tutorials</a></li>
+                            <li><a href="hero.html">B.sc Video Tutorials</a></li>
+                            <li><a href="hero.html">M.sc Video Tutorials</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <ul>
+                    <li class="SB-dropdown-container">
+                        <a href="calculator.html" class="SB-dropdown-tittle"><i class="fa-light fa-calculator unqiue-icon"></i> Calculator </i></a>
+                    </li>
+                </ul>
+
+
+                <ul>
+                    <li class="SB-dropdown-container active">
+                        <a href="progess.html" class="SB-dropdown-tittle"><i class="fa-solid fa-chart-simple unqiue-icon"></i> My Progress </i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="terms">
+                <a href="index.html">Home</a>
+                <p>|</p>
+                <a href="">Contact</a>
+                <p>|</p>
+                <a href="">Terms</a>
+            </div>
+        </section>
+    </aside>
+    
+
+    <!-- /* ============================== Dashboard Main Content ====================== */ -->
+    <main class="dashboard-content">
+        <!-- /* ========== Slider Hero Images ================ */ -->
+        <section class="slider">
+            <div id="heroSlider" class="slider-flex">
+                <figure class="slider-container">
+                    <img src="image/Dashboard/My-Progess1.jpg" alt="">
+                    <!-- <figcaption>
+                        <span class="slide-category">Relativity</span>
+                        <h1>Explore the Fabric of <br> <span>Spacetime.</span></h1>
+                        <p>Understand how gravity warps time and space, from <br>special relativity to the edge of a black hole.</p>
+                        <button class=".slide-btn" data-filter="Relativity"> <h2>Explore Relativity</h2> <i class="fa-solid fa-arrow-right"></i></button>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/My-Progess2.jpg" alt="">
+                    <!-- <figcaption>
+                        <span class="slide-category">Quantum Physics</span>
+                        <h1>Enter the Subatomic World, <br> <span>Within the Universe</span></h1>
+                        <p>Discover the bizarre rules of quantum mechanics, <br>where particles exist in multiple states at once.</p>
+                        <button class=".slide-btn" data-filter="Quantum Physics"> <h2>Explore Quantum</h2> <i class="fa-solid fa-arrow-right"></i></button>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/My-Progess3.png" alt="">
+                    <!-- <figcaption>
+                        <span class="slide-category">Thermodynamics</span>
+                        <h1>The Arrow of<br> <span>Time.</span></h1>
+                        <p>Discover the Second Law of Thermodynamics and why every system <br> in the universe naturally moves from order to chaos.</p>
+                        <button class=".slide-btn" data-filter="Thermodynamics"><h2>Explore Entropy </h2> <i class="fa-solid fa-arrow-right"></i></button>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/My-Progess4.jpg" alt="">
+                    <!-- <figcaption>
+                        <span class="slide-category">Mechanics</span>
+                        <h1>Master the <br> <span>Laws of Motion.</span></h1>
+                        <p>From Newton's Cradle to Kinematics, understand <br>how force, mass, and acceleration govern the universe.</p>
+                        <button class=".slide-btn" data-filter="Mechanics"><h2>Explore Mechanics </h2> <i class="fa-solid fa-arrow-right"></i></button>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/My-Progess5.jpg" alt="">
+                    <!-- <figcaption>
+                        <span class="slide-category">Electromagnetism</span>
+                        <h1>Harness the Power <br> <span>of Electricity.</span></h1>
+                        <p>Visualize electric fields, magnetic forces, and the invisible waves  <br> that connect our modern world</p>
+                        <button class=".slide-btn" data-filter="Electromagnetism"><h2>Explore E-M</h2> <i class="fa-solid fa-arrow-right"></i></button>
+                    </figcaption> -->
+                </figure>
+            </div>
+
+            <div class="slider-btn">
+                <button id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <!--=================== My Stats ==================  -->
+        <section class="horizontal-ray">
+            <div class="horizontal-ray-flex">
+                <span><a href=""><i class="fa-solid fa-trophy"></i> Level 3: Silver</a></span> <span><a href=""><i class="fa-solid fa-medal"></i> 4 Badges Earned</a></span> <span><a href=""><i class="fa-solid fa-star"></i> 2,450 Total XP</a></span><span><a href=""><i class="fa-solid fa-fire"></i> 7-Day Streak</a></span>
+
+                <span><a href=""><i class="fa-solid fa-trophy"></i> Level 3: Silver</a></span> <span><a href=""><i class="fa-solid fa-medal"></i> 4 Badges Earned</a></span> <span><a href=""><i class="fa-solid fa-star"></i> 2,450 Total XP</a></span><span><a href=""><i class="fa-solid fa-fire"></i> 7-Day Streak</a></span>
+            </div>
+        </section>
+
+        <!-- ============= PROGRESS DASHBOARD ============= -->
+        <section class="progress-container">
+
+            <!-- SECTION 1: RANK HERO -->
+            <section class="rank-hero">
+                <div class="rank-left">
+                    <div class="rank-badge silver">
+                        <i class="fa-solid fa-atom"></i>
+                    </div>
+                    <div class="rank-info">
+                        <span>Current Rank</span>
+                        <h1>Level 3: Silver Physicist</h1>
+                        <p>You are 1,200 XP away from the <strong>Gold Rank</strong>.</p>
+                    </div>
+                </div>
+                <div class="rank-right">
+                    <div class="xp-labels">
+                        <span>2,450 XP</span>
+                        <span>5,000 XP</span>
+                    </div>
+                    <div class="xp-bar-bg">
+                        <div class="xp-bar-fill" id="xpBar"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TWO COLUMN LAYOUT -->
+            <div class="progress-grid">
+                
+                <!-- SECTION 2: MASTERY BREAKDOWN -->
+                <section class="mastery-section">
+                    <h2 class="section-title"><i class="fa-solid fa-chart-pie"></i> Subject Mastery</h2>
+                    <div class="mastery-grid">
+                        <!-- Mechanics -->
+                        <div class="mastery-card">
+                            <div class="circle-ring" style="--percent: 85;">
+                                <div class="inner-circle"><span>85%</span></div>
+                            </div>
+                            <h3>Mechanics</h3>
+                        </div>
+                        <!-- Thermodynamics -->
+                        <div class="mastery-card">
+                            <div class="circle-ring" style="--percent: 40;">
+                                <div class="inner-circle"><span>40%</span></div>
+                            </div>
+                            <h3>Thermodynamics</h3>
+                        </div>
+                        <!-- Quantum -->
+                        <div class="mastery-card">
+                            <div class="circle-ring" style="--percent: 65;">
+                                <div class="inner-circle"><span>65%</span></div>
+                            </div>
+                            <h3>Quantum</h3>
+                        </div>
+                        <!-- Electromagnetism -->
+                        <div class="mastery-card">
+                            <div class="circle-ring" style="--percent: 25;">
+                                <div class="inner-circle"><span>25%</span></div>
+                            </div>
+                            <h3>Electromagnetism</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 3: ACHIEVEMENTS -->
+                <section class="achievements-section">
+                    <h2 class="section-title"><i class="fa-solid fa-trophy"></i> Achievements</h2>
+                    <div class="achievements-grid">
+                        <!-- Unlocked -->
+                        <div class="achievement unlocked">
+                            <div class="ach-icon"><i class="fa-solid fa-rocket"></i></div>
+                            <h4>First Steps</h4>
+                            <p>Watched 1st video</p>
+                        </div>
+                        <!-- Unlocked -->
+                        <div class="achievement unlocked">
+                            <div class="ach-icon"><i class="fa-solid fa-fire"></i></div>
+                            <h4>On Fire</h4>
+                            <p>7-day streak</p>
+                        </div>
+                        <!-- Locked -->
+                        <div class="achievement locked">
+                            <div class="ach-icon"><i class="fa-solid fa-book"></i></div>
+                            <h4>Bookworm</h4>
+                            <p>Download 10 books</p>
+                        </div>
+                        <!-- Locked -->
+                        <div class="achievement locked">
+                            <div class="ach-icon"><i class="fa-solid fa-brain"></i></div>
+                            <h4>Calculated</h4>
+                            <p>Use calculator 20x</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- SECTION 4: ACTIVITY HEATMAP -->
+            <section class="heatmap-section">
+                <h2 class="section-title"><i class="fa-solid fa-calendar-days"></i> Study Activity</h2>
+                <div class="heatmap-wrapper">
+                    <!-- JS will generate the squares here -->
+                    <div class="heatmap-grid" id="heatmapGrid"></div>
+                    <div class="heatmap-legend">
+                        <span>Less</span>
+                        <div class="hm-box level-0"></div>
+                        <div class="hm-box level-1"></div>
+                        <div class="hm-box level-2"></div>
+                        <div class="hm-box level-3"></div>
+                        <span>More</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 6: LEADERBOARD -->
+            <section class="leaderboard-section">
+                <h2 class="section-title"><i class="fa-solid fa-ranking-star"></i> Global Leaderboard</h2>
+                <div class="leaderboard-list">
+                    <div class="lb-row top-1">
+                        <span class="lb-rank"><i class="fa-solid fa-crown"></i> 1</span>
+                        <div class="lb-user"><div class="lb-avatar">AT</div> Attemis</div>
+                        <span class="lb-xp">8,450 XP</span>
+                    </div>
+                    <div class="lb-row top-2">
+                        <span class="lb-rank">2</span>
+                        <div class="lb-user"><div class="lb-avatar">BC</div> Big Crunch</div>
+                        <span class="lb-xp">7,200 XP</span>
+                    </div>
+                    <!-- The Current User -->
+                    <div class="lb-row current-user">
+                        <span class="lb-rank">3</span>
+                        <div class="lb-user"><div class="lb-avatar user-avatar">BB</div> You (BigBang)</div>
+                        <span class="lb-xp">2,450 XP</span>
+                    </div>
+                    <div class="lb-row">
+                        <span class="lb-rank">4</span>
+                        <div class="lb-user"><div class="lb-avatar">PB</div> Proxima-B</div>
+                        <span class="lb-xp">2,100 XP</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 7: NEXT MILESTONES -->
+            <section class="goals-section">
+                <h2 class="section-title"><i class="fa-solid fa-bullseye"></i> Next Milestones</h2>
+                <div class="goals-list">
+                    <!-- Goal 1 -->
+                    <div class="goal-item">
+                        <div class="goal-icon"><i class="fa-solid fa-video"></i></div>
+                        <div class="goal-info">
+                            <h4>Watch 3 more Kinematics videos</h4>
+                            <div class="goal-progress"><div class="goal-fill" style="width: 40%;"></div></div>
+                            <span>2 / 5 completed</span>
+                        </div>
+                        <span class="goal-reward">+150 XP</span>
+                    </div>
+                    <!-- Goal 2 -->
+                    <div class="goal-item">
+                        <div class="goal-icon"><i class="fa-solid fa-book"></i></div>
+                        <div class="goal-info">
+                            <h4>Download 10 textbooks</h4>
+                            <div class="goal-progress"><div class="goal-fill" style="width: 70%;"></div></div>
+                            <span>7 / 10 completed</span>
+                        </div>
+                        <span class="goal-reward">+200 XP</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 5: RECENT ACTIVITY TIMELINE -->            
+            <section class="timeline-section">
+                <h2 class="section-title"><i class="fa-solid fa-clock-rotate-left"></i> Recent Activity</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="time-dot"><i class="fa-solid fa-play"></i></div>
+                        <div class="time-content">
+                            <div class="time-header">
+                                <span class="time-date">Today, 2:30 PM</span>
+                                <span class="time-xp">+50 XP</span>
+                            </div>
+                            <h4>Completed a Kinematics video</h4>
+                            <p>You finished "Newton's Laws of Motion Explained"</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time-dot"><i class="fa-solid fa-book"></i></div>
+                        <div class="time-content">
+                            <div class="time-header">
+                                <span class="time-date">Yesterday</span>
+                                <span class="time-xp">+20 XP</span>
+                            </div>
+                            <h4>Downloaded 'Thermodynamics Essentials'</h4>
+                            <p>Added to your offline library</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time-dot"><i class="fa-solid fa-fire"></i></div>
+                        <div class="time-content">
+                            <div class="time-header">
+                                <span class="time-date">3 days ago</span>
+                                <span class="time-xp">+100 XP</span>
+                            </div>
+                            <h4>Reached a 5-day streak</h4>
+                            <p>Keep it up to unlock the "On Fire" badge!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>  
+
+        <!-- Footer Section -->
+        <footer class="physic-footer">
+            <div class="footer-container">
+                <div class="footer-column brand-column">
+                    <h3>Physics Universe</h3>
+                    <p>Mastering the laws that govern the cosmos, one lesson at a time.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dashboard.html">Courses</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="video.html">Video Lessons</a></li>
+                        <li><a href="textbook.html">Textbook Library</a></li>
+                        <li><a href="dashboard.html">Past Questions</a></li>
+                        <li><a href="calculator.html">Physics Calculator</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Get in Touch</h4>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-envelope"></i> support@physicuniverse.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +234 814 841 6639</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Kaduna, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Physics Universe. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="progress.js"></script>
+</body>
+
+
+<script>
+        // ==========================================
+    // BLOCK 1: Variables & Element Selectors
+    // ==========================================
+    const heroSlider = document.getElementById('heroSlider');
+    const nextSlideBtn = document.getElementById('nextBtn');
+    const prevSlideBtn = document.getElementById('prevBtn');
+    const dots = document.querySelectorAll('.slider-dots .dot');
+
+    const slideWidth = 1462;
+
+    // ==========================================
+    // BLOCK 2: Functions
+    // ==========================================
+
+    // The auto-slide logic
+    function autoSlide() {
+        const maxScroll = heroSlider.scrollWidth - heroSlider.clientWidth;
+        if (heroSlider.scrollLeft >= maxScroll - 10) {
+            // We're at the end, jump back to the start
+            heroSlider.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            // Keep sliding right
+            heroSlider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+        }
+    }
+
+    // Update the active pagination dot
+    function updateDots() {
+        const currentIndex = Math.round(heroSlider.scrollLeft / slideWidth);
+        dots.forEach((dot, index) => {
+            dot.classList.remove('active');
+            if (index === currentIndex) {
+                dot.classList.add('active');
+            }
+        });
+    }
+
+    // Restart the timer (used after user clicks)
+    function resetTimer() {
+        clearInterval(slideTimer);
+        slideTimer = setInterval(autoSlide, 4000);
+    }
+
+    // ==========================================
+    // BLOCK 3: The Timer
+    // ==========================================
+    let slideTimer = setInterval(autoSlide, 4000);   // Every 4 seconds
+
+    // ==========================================
+    // BLOCK 4: Event Listeners
+    // ==========================================
+
+    // Next button
+    nextSlideBtn.addEventListener('click', () => {
+        heroSlider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+        resetTimer();
+    });
+
+    // Prev button
+    prevSlideBtn.addEventListener('click', () => {
+        heroSlider.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+        resetTimer();
+    });
+
+    
+    heroSlider.addEventListener('scroll', updateDots);
+
+    // Click a dot to jump to that slide
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            heroSlider.scrollTo({
+                left: index * slideWidth,
+                behavior: 'smooth'
+            });
+            resetTimer();
+        });
+    });
+
+    // Pause on hover, resume on leave
+    heroSlider.addEventListener('mouseenter', () => clearInterval(slideTimer));
+    heroSlider.addEventListener('mouseleave', () => slideTimer = setInterval(autoSlide, 4000));
+
+    updateDots();
+</script>
+</html>

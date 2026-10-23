@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Book Library</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" href="image/logo.png">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cinzel:wght@400..900&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Inter:wght@400;700&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--  ============= Header containing the Top Nav Bar ====================== -->
+    <header class="top-navbar">
+        <a class="logo" href="index.html">
+            <img src="image/logo.png" alt="">
+            <h1>Physic Universe</h1>
+        </a>
+
+        <form class="form" action="">
+            <div class="search-wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="Search" type="text" name="text" placeholder="Search topics, courses, or concepts...." required>
+            </div>
+        </form>
+
+        <ul>
+            <li class="dropdown-container">
+                <a href="hero.html" class="dropdown-tittle"><i id="web" class="fa-solid fa-globe"></i> English <i id="thearrow" class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="hero.html">English</a></li>
+                    <li><a href="hero.html">Español</a></li>
+                    <li><a href="hero.html">中文</a></li>
+                    <li><a href="hero.html">हिन्दी</a></li>
+                    <li><a href="hero.html">Français</a></li>
+                    <li><a href="hero.html">العربية</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="last-nav">
+            <a class="cal" href="calculator.html"><i class="fa-light fa-calculator"></i></a>
+
+            <section class="profile">
+                <img src="image/Dashboard/avater.png" alt="">
+
+                <div>
+                    <p>Welcome Back,</p>
+                    <h3>BigBang</h3>
+                </div>
+            </section>
+
+            <a class="logout" href="login.html">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> 
+                <h4>Log out</h4>
+            </a>
+        </div>
+    </header>
+    
+    <!-- ======================= Slide Bar Navigation ================== -->
+    <aside class="sidebar">
+        <section class="sidebar-holder">
+            <div class="primary-data">
+                <a href="index.html"><i class="fa-solid fa-house"></i> <p>Home</p></a>
+                <a href=""><i class="fa-solid fa-user"></i> <p>Pofile</p></a>
+                <a href=""><i class="fa-solid fa-user-pen"></i><p>Account Bio</p></a>
+            </div>
+
+            <div class="secondary-data">
+                <ul>
+                    <li class="SB-dropdown-container " >
+                        <a href="dashboard.html" class="SB-dropdown-tittle"><i class="fa-solid fa-graduation-cap unqiue-icon"></i> Courses <i class="fa-solid fa-angle-down arrow-icon"></i></a>
+                        <ul class="SB-dropdown-menu">
+                            <li><a href="hero.html">Secondary School Courses</a></li>
+                            <li><a href="hero.html">B.sc Courses</a></li>
+                            <li><a href="hero.html">M.sc Courses</a></li>
+                            <li><a href="hero.html">Past Question</a></li>
+                            <li><a href="hero.html">Problem Set</a></li>
+                            <li><a href="hero.html">Exam Prep</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                
+                <ul>
+                    <li class="SB-dropdown-container active">
+                        <a href="textbook.html" class="SB-dropdown-tittle"><i class="fa-duotone fa-solid fa-books unqiue-icon"></i> Textboox Library <i class="fa-solid fa-angle-down arrow-icon"></i></a>
+                        <ul class="SB-dropdown-menu">
+                            <li><a href="hero.html">Secondary School TextBooks</a></li>
+                            <li><a href="hero.html">B.sc TextBooks</a></li>
+                            <li><a href="hero.html">M.sc TextBooks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <ul>
+                    <li class="SB-dropdown-container">
+                        <a href="video.html" class="SB-dropdown-tittle"><i class="fa-brands fa-youtube unqiue-icon"></i> Video Lessons <i class="fa-solid fa-angle-down arrow-icon"></i></a>
+                        <ul class="SB-dropdown-menu">
+                            <li><a href="hero.html">Secondary School Videos Tutorials</a></li>
+                            <li><a href="hero.html">B.sc Video Tutorials</a></li>
+                            <li><a href="hero.html">M.sc Video Tutorials</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <ul>
+                    <li class="SB-dropdown-container">
+                        <a href="calculator.html" class="SB-dropdown-tittle"><i class="fa-light fa-calculator unqiue-icon"></i> Calculator </i></a>
+                    </li>
+                </ul>
+
+
+                <ul>
+                    <li class="SB-dropdown-container">
+                        <a href="progess.html" class="SB-dropdown-tittle"><i class="fa-solid fa-chart-simple unqiue-icon"></i> My Progress </i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="terms">
+                <a href="index.html">Home</a>
+                <p>|</p>
+                <a href="">Contact</a>
+                <p>|</p>
+                <a href="">Terms</a>
+            </div>
+        </section>
+    </aside>
+    
+
+    <!-- /* ============================== Dashboard Main Content ====================== */ -->
+    <main class="dashboard-content">
+        <!-- /* ========== Slider Hero Images ================ */ -->
+        <section class="slider">
+            <div id="heroSlider" class="slider-flex">
+                <figure class="slider-container">
+                    <img src="image/Dashboard/library-bg1.jpg" alt="">
+                    <!-- <figcaption>
+                        <h1>learn Physics <br> <span>Understand the Universe</span></h1>
+                        <p>Build your skills, master key concepts, and explore the law <br>that shape our world and beyond.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/library-bg6.png" alt="">
+                    <!-- <figcaption>
+                        <h1>Where Motion <br> <span>Meets Momentum.</span></h1>
+                        <p>Explore the elegant physics of collisions, energy transfer, and <br> conservation laws that govern every interaction in the universe.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/library-bg4.jfif" alt="">
+                    <!-- <figcaption>
+                        <h1>Launch Your <br> <span>Physics Journey.</span></h1>
+                        <p>From the first principles of motion to the edge of the cosmos, <br>take off with lessons designed to make physics click.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/library-bg5.png" alt="">
+                    <!-- <figcaption>
+                        <h1>Master the <br> <span>Forces of Nature.</span></h1>
+                        <p>Dive into the mechanics of gravity, motion, and <br>energy that shape every star, planet, and galaxy in existence.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/library.bg-2.png" alt="">
+                    <!-- <figcaption>
+                        <h1>Explore the <br> <span>Laws of the Cosmos.</span></h1>
+                        <p>From E = mc² to Newton's laws, understand the fundamental <br> equations that govern everything in our universe.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+            </div>
+
+            <div class="slider-btn">
+                <button id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+
+
+        <!--=================== My Stats ==================  -->
+        <section class="horizontal-ray">
+            <div class="horizontal-ray-flex">
+                <span> <a href=""> <i class="fa-solid fa-download"></i> 12 Books Downloaded</a></span> <span><a href=""><i class="fa-solid fa-book"></i> 50+ Textbooks Available</a></span> <span><a href=""><i class="fa-solid fa-file-pdf"></i> PDF Format</a></span> <span><a href=""><i class="fa-solid fa-gift"></i> 100% Free Access</a></span>
+
+                <span> <a href=""> <i class="fa-solid fa-download"></i> 12 Books Downloaded</a></span> <span><a href=""><i class="fa-solid fa-book"></i> 50+ Textbooks Available</a></span> <span><a href=""><i class="fa-solid fa-file-pdf"></i> PDF Format</a></span> <span><a href=""><i class="fa-solid fa-gift"></i> 100% Free Access</a></span>
+            </div>
+        </section>
+
+        <!-- ============= Textbook Library ============= -->
+        <section class="library-section">
+            <div class="library-header">
+                <h2><i class="fa-solid fa-book-open"></i> Textbook Library</h2>
+                <p>Download comprehensive notes and textbooks for all physics levels.</p>
+                
+                <!-- Search/Filter Bar -->
+                <div class="library-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search by title, topic, or author...">
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Books</button>
+                    <button class="filter-btn" data-filter="mechanics">Mechanics</button>
+                    <button class="filter-btn" data-filter="thermodynamics">Thermodynamics</button>
+                    <button class="filter-btn" data-filter="electromagnetism">Electromagnetism</button>
+                    <button class="filter-btn" data-filter="optics">Waves & Optics</button>
+                    <button class="filter-btn" data-filter="quantum">Quantum Physics</button>
+                    <button class="filter-btn" data-filter="nuclear">Nuclear Physics</button>
+                    <button class="filter-btn" data-filter="astrophysics">Astrophysics</button>
+                    <button class="filter-btn" data-filter="mathematical">Mathematical</button>
+                </div>
+            </div>
+
+            <div class="book-grid">
+
+                <!-- ===== MECHANICS ===== -->
+
+                <!-- CARD 1 -->
+                <a href="book-detail.html?id=units-dimensions-and-vectors" class="book-card" data-category="mechanics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/units-vectors-cover.jpg" alt="Units, Dimensions and Vectors Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Units, Dimensions and Vectors</h3>
+                        <p>SI units, dimensional analysis, scalars, vectors, and measurement basics.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 2 -->
+                <a href="book-detail.html?id=kinematics-masterclass" class="book-card" data-category="mechanics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/kinematics-cover.png" alt="Kinematics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Kinematics Masterclass</h3>
+                        <p>Motion, velocity, acceleration, and graphs.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 3 -->
+                <a href="book-detail.html?id=newtons-laws-of-motion" class="book-card" data-category="mechanics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/newtons-laws-cover.png" alt="Newton's Laws of Motion Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Newton's Laws of Motion</h3>
+                        <p>Forces, inertia, friction, and free-body diagrams.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 4 -->
+                <a href="book-detail.html?id=work-energy-and-power" class="book-card" data-category="mechanics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/work-energy-power-cover.png" alt="Work, Energy and Power Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Work, Energy and Power</h3>
+                        <p>Kinetic and potential energy, conservation of energy, and efficiency.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 5 -->
+                <a href="book-detail.html?id=momentum-and-collisions" class="book-card" data-category="mechanics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/momentum-collisions-cover.png" alt="Momentum and Collisions Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Momentum and Collisions</h3>
+                        <p>Impulse, conservation of momentum, and elastic and inelastic collisions.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 6 -->
+                <a href="book-detail.html?id=circular-motion-and-gravitation" class="book-card" data-category="mechanics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/circular-motion-gravitation-cover.png" alt="Circular Motion and Gravitation Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Circular Motion and Gravitation</h3>
+                        <p>Centripetal force, satellite orbits, Kepler's laws, and gravitational fields.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 7 -->
+                <a href="book-detail.html?id=rotational-dynamics" class="book-card" data-category="mechanics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/rotational-dynamics-cover.png" alt="Rotational Dynamics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Rotational Dynamics</h3>
+                        <p>Torque, moment of inertia, angular momentum, and rolling motion.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 8 -->
+                <a href="book-detail.html?id=statics-and-equilibrium" class="book-card" data-category="mechanics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/statics-equilibrium-cover.png" alt="Statics and Equilibrium Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Statics and Equilibrium</h3>
+                        <p>Moments, centre of gravity, and stability of structures.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 9 -->
+                <a href="book-detail.html?id=fluid-mechanics" class="book-card" data-category="mechanics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/fluid-mechanics-cover.png" alt="Fluid Mechanics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Fluid Mechanics</h3>
+                        <p>Pressure, buoyancy, viscosity, and Bernoulli's principle.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 10 -->
+                <a href="book-detail.html?id=properties-of-matter" class="book-card" data-category="mechanics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/properties-of-matter-cover.png" alt="Properties of Matter Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Properties of Matter</h3>
+                        <p>Stress, strain, Hooke's law, surface tension, and material behaviour.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 11 -->
+                <a href="book-detail.html?id=simple-harmonic-motion" class="book-card" data-category="mechanics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/shm-cover.png" alt="Simple Harmonic Motion Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Simple Harmonic Motion</h3>
+                        <p>Oscillations, springs, pendulums, damping, and resonance.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 12 -->
+                <a href="book-detail.html?id=lagrangian-and-hamiltonian-mechanics" class="book-card" data-category="mechanics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/lagrangian-hamiltonian-cover.png" alt="Lagrangian and Hamiltonian Mechanics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Lagrangian and Hamiltonian Mechanics</h3>
+                        <p>Generalised coordinates, variational principles, and advanced classical mechanics.</p>
+                    </div>
+                </a>
+
+                <!-- ===== THERMAL PHYSICS ===== -->
+
+                <!-- CARD 13 -->
+                <a href="book-detail.html?id=thermodynamics-essentials" class="book-card" data-category="thermodynamics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/thermo-cover.png" alt="Thermodynamics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Thermodynamics Essentials</h3>
+                        <p>Heat, temperature, entropy, and laws of thermodynamics.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 14 -->
+                <a href="book-detail.html?id=kinetic-theory-of-gases" class="book-card" data-category="thermodynamics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/kinetic-theory-cover.png" alt="Kinetic Theory of Gases Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Kinetic Theory of Gases</h3>
+                        <p>Ideal gas laws, molecular speeds, pressure, and gas behaviour.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 15 -->
+                <a href="book-detail.html?id=heat-transfer" class="book-card" data-category="thermodynamics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/heat-transfer-cover.png" alt="Heat Transfer Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Heat Transfer</h3>
+                        <p>Conduction, convection, radiation, and thermal insulation.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 16 -->
+                <a href="book-detail.html?id=statistical-mechanics" class="book-card" data-category="thermodynamics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/statistical-mechanics-cover.png" alt="Statistical Mechanics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Statistical Mechanics</h3>
+                        <p>Microstates, partition functions, Boltzmann distribution, and quantum statistics.</p>
+                    </div>
+                </a>
+
+                <!-- ===== WAVES, SOUND AND OPTICS ===== -->
+
+                <!-- CARD 17 -->
+                <a href="book-detail.html?id=wave-motion" class="book-card" data-category="optics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/wave-motion-cover.png" alt="Wave Motion Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Wave Motion</h3>
+                        <p>Transverse and longitudinal waves, superposition, standing waves, and the Doppler effect.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 18 -->
+                <a href="book-detail.html?id=sound-and-acoustics" class="book-card" data-category="optics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/sound-acoustics-cover.png" alt="Sound and Acoustics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Sound and Acoustics</h3>
+                        <p>Pitch, loudness, resonance, musical instruments, and room acoustics.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 19 -->
+                <a href="book-detail.html?id=geometrical-optics" class="book-card" data-category="optics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/geometrical-optics-cover.jpg" alt="Geometrical Optics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Geometrical Optics</h3>
+                        <p>Reflection, refraction, lenses, mirrors, and optical instruments.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 20 -->
+                <a href="book-detail.html?id=physical-optics" class="book-card" data-category="optics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/physical-optics-cover.jpg" alt="Physical Optics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Physical Optics</h3>
+                        <p>Interference, diffraction, polarisation, and the wave nature of light.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 21 -->
+                <a href="book-detail.html?id=lasers-and-photonics" class="book-card" data-category="optics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/lasers-photonics-cover.jpg" alt="Lasers and Photonics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Lasers and Photonics</h3>
+                        <p>Stimulated emission, laser types, optical fibres, and photonic devices.</p>
+                    </div>
+                </a>
+
+                <!-- ===== ELECTRICITY AND MAGNETISM ===== -->
+
+                <!-- CARD 22 -->
+                <a href="book-detail.html?id=electrostatics" class="book-card" data-category="electromagnetism">
+                    <div class="book-cover">
+                        <img src="image/textbooks/electrostatics-cover.jpg" alt="Electrostatics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Electrostatics</h3>
+                        <p>Charge, Coulomb's law, electric fields, potential, and capacitors.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 23 -->
+                <a href="book-detail.html?id=current-electricity" class="book-card" data-category="electromagnetism">
+                    <div class="book-cover">
+                        <img src="image/textbooks/current-electricity-cover.jpg" alt="Current Electricity Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Current Electricity</h3>
+                        <p>Ohm's law, resistance, DC circuits, and Kirchhoff's rules.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 24 -->
+                <a href="book-detail.html?id=magnetism-and-electromagnetic-induction" class="book-card" data-category="electromagnetism">
+                    <div class="book-cover">
+                        <img src="image/textbooks/magnetism-induction-cover.jpg" alt="Magnetism and Electromagnetic Induction Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Magnetism and Electromagnetic Induction</h3>
+                        <p>Magnetic fields, forces on charges, Faraday's law, and Lenz's law.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 25 -->
+                <a href="book-detail.html?id=alternating-current-circuits" class="book-card" data-category="electromagnetism">
+                    <div class="book-cover">
+                        <img src="image/textbooks/ac-circuits-cover.jpg" alt="Alternating Current Circuits Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Alternating Current Circuits</h3>
+                        <p>Reactance, impedance, resonance, transformers, and power in AC systems.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 26 -->
+                <a href="book-detail.html?id=maxwells-equations" class="book-card" data-category="electromagnetism">
+                    <div class="book-cover">
+                        <img src="image/textbooks/maxwell-equations-cover.jpg" alt="Maxwell's Equations Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Maxwell's Equations</h3>
+                        <p>Gauss's laws, Ampere's law, displacement current, and unified electromagnetism.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 27 -->
+                <a href="book-detail.html?id=electromagnetic-waves" class="book-card" data-category="electromagnetism">
+                    <div class="book-cover">
+                        <img src="image/textbooks/electromagnetic-waves-cover.jpg" alt="Electromagnetic Waves Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Electromagnetic Waves</h3>
+                        <p>The EM spectrum, wave propagation, radiation, and antennas.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 28 -->
+                <a href="book-detail.html?id=semiconductor-physics-and-electronics" class="book-card" data-category="electromagnetism">
+                    <div class="book-cover">
+                        <img src="image/textbooks/semiconductor-electronics-cover.jpg" alt="Semiconductor Physics and Electronics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Semiconductor Physics and Electronics</h3>
+                        <p>Band theory, diodes, transistors, and amplifier basics.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 29 -->
+                <a href="book-detail.html?id=digital-and-analogue-electronics" class="book-card" data-category="electromagnetism">
+                    <div class="book-cover">
+                        <img src="image/textbooks/digital-analogue-electronics-cover.jpg" alt="Digital and Analogue Electronics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Digital and Analogue Electronics</h3>
+                        <p>Logic gates, operational amplifiers, signals, and circuit design.</p>
+                    </div>
+                </a>
+
+                <!-- ===== MODERN PHYSICS ===== -->
+
+                <!-- CARD 30 -->
+                <a href="book-detail.html?id=modern-physics-fundamentals" class="book-card" data-category="quantum">
+                    <div class="book-cover">
+                        <img src="image/textbooks/modern-physics-cover.jpg" alt="Modern Physics Fundamentals Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Modern Physics Fundamentals</h3>
+                        <p>Photoelectric effect, X-rays, wave-particle duality, and early quantum ideas.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 31 -->
+                <a href="book-detail.html?id=special-relativity" class="book-card" data-category="quantum">
+                    <div class="book-cover">
+                        <img src="image/textbooks/special-relativity-cover.jpg" alt="Special Relativity Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Special Relativity</h3>
+                        <p>Time dilation, length contraction, Lorentz transformations, and mass-energy equivalence.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 32 -->
+                <a href="book-detail.html?id=general-relativity" class="book-card" data-category="quantum">
+                    <div class="book-cover">
+                        <img src="image/textbooks/general-relativity-cover.jpg" alt="General Relativity Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>General Relativity</h3>
+                        <p>Curved spacetime, gravity, black holes, and gravitational waves.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 33 -->
+                <a href="book-detail.html?id=quantum-mechanics-an-introduction" class="book-card" data-category="quantum">
+                    <div class="book-cover">
+                        <img src="image/textbooks/quantum-intro-cover.jpg" alt="Quantum Mechanics Introduction Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Quantum Mechanics: An Introduction</h3>
+                        <p>Wavefunctions, the Schrodinger equation, potential wells, and uncertainty.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 34 -->
+                <a href="book-detail.html?id=advanced-quantum-mechanics" class="book-card" data-category="quantum">
+                    <div class="book-cover">
+                        <img src="image/textbooks/quantum-advanced-cover.jpg" alt="Advanced Quantum Mechanics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Advanced Quantum Mechanics</h3>
+                        <p>Operators, spin, perturbation theory, scattering, and identical particles.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 35 -->
+                <a href="book-detail.html?id=atomic-physics" class="book-card" data-category="quantum">
+                    <div class="book-cover">
+                        <img src="image/textbooks/atomic-physics-cover.jpg" alt="Atomic Physics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Atomic Physics</h3>
+                        <p>Bohr model, hydrogen atom, electron configurations, and atomic spectra.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 36 -->
+                <a href="book-detail.html?id=molecular-physics-and-spectroscopy" class="book-card" data-category="quantum">
+                    <div class="book-cover">
+                        <img src="image/textbooks/molecular-spectroscopy-cover.jpg" alt="Molecular Physics and Spectroscopy Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Molecular Physics and Spectroscopy</h3>
+                        <p>Molecular bonding, vibrational and rotational spectra, and Raman scattering.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 37 -->
+                <a href="book-detail.html?id=nuclear-physics" class="book-card" data-category="nuclear">
+                    <div class="book-cover">
+                        <img src="image/textbooks/nuclear-physics-cover.jpg" alt="Nuclear Physics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Nuclear Physics</h3>
+                        <p>Nuclear structure, binding energy, fission, fusion, and reactors.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 38 -->
+                <a href="book-detail.html?id=radioactivity-and-radiation" class="book-card" data-category="nuclear">
+                    <div class="book-cover">
+                        <img src="image/textbooks/radioactivity-radiation-cover.jpg" alt="Radioactivity and Radiation Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Radioactivity and Radiation</h3>
+                        <p>Decay laws, half-life, radiation detection, and radiation safety.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 39 -->
+                <a href="book-detail.html?id=particle-physics" class="book-card" data-category="nuclear">
+                    <div class="book-cover">
+                        <img src="image/textbooks/particle-physics-cover.jpg" alt="Particle Physics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Particle Physics</h3>
+                        <p>Quarks, leptons, fundamental forces, accelerators, and the Standard Model.</p>
+                    </div>
+                </a>
+
+                <!-- ===== CONDENSED MATTER ===== -->
+
+                <!-- CARD 40 -->
+                <a href="book-detail.html?id=solid-state-physics" class="book-card" data-category="quantum">
+                    <div class="book-cover">
+                        <img src="image/textbooks/solid-state-cover.jpg" alt="Solid State Physics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Solid State Physics</h3>
+                        <p>Crystal structures, lattice vibrations, electron bands, and conductivity.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 41 -->
+                <a href="book-detail.html?id=superconductivity-and-quantum-materials" class="book-card" data-category="nuclear">
+                    <div class="book-cover">
+                        <img src="image/textbooks/superconductivity-cover.jpg" alt="Superconductivity and Quantum Materials Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Superconductivity and Quantum Materials</h3>
+                        <p>Zero resistance, magnetic levitation, topological materials, and nanostructures.</p>
+                    </div>
+                </a>
+
+                <!-- ===== ASTROPHYSICS AND SPACE ===== -->
+
+                <!-- CARD 42 -->
+                <a href="book-detail.html?id=astrophysics" class="book-card" data-category="astrophysics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/astrophysics-cover.jpg" alt="Astrophysics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Astrophysics</h3>
+                        <p>Stars, stellar evolution, galaxies, neutron stars, and black holes.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 43 -->
+                <a href="book-detail.html?id=cosmology" class="book-card" data-category="astrophysics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/cosmology-cover.jpg" alt="Cosmology Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Cosmology</h3>
+                        <p>The Big Bang, expanding universe, dark matter, and dark energy.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 44 -->
+                <a href="book-detail.html?id=plasma-physics" class="book-card" data-category="astrophysics">
+                    <div class="book-cover">
+                        <img src="image/textbooks/plasma-physics-cover.jpg" alt="Plasma Physics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Plasma Physics</h3>
+                        <p>Ionised gases, magnetic confinement, fusion energy, and space plasmas.</p>
+                    </div>
+                </a>
+
+                <!-- ===== METHODS AND APPLIED PHYSICS ===== -->
+
+                <!-- CARD 45 -->
+                <a href="book-detail.html?id=mathematical-methods-for-physics" class="book-card" data-category="mathematical">
+                    <div class="book-cover">
+                        <img src="image/textbooks/mathematical-methods-cover.jpg" alt="Mathematical Methods for Physics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Mathematical Methods for Physics</h3>
+                        <p>Calculus, differential equations, linear algebra, and Fourier analysis.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 46 -->
+                <a href="book-detail.html?id=computational-physics" class="book-card" data-category="mathematical">
+                    <div class="book-cover">
+                        <img src="image/textbooks/computational-physics-cover.jpg" alt="Computational Physics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Computational Physics</h3>
+                        <p>Numerical methods, simulations, and Python programming for physics.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 47 -->
+                <a href="book-detail.html?id=experimental-physics-and-error-analysis" class="book-card" data-category="mathematical">
+                    <div class="book-cover">
+                        <img src="image/textbooks/experimental-physics-cover.jpg" alt="Experimental Physics and Error Analysis Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Experimental Physics and Error Analysis</h3>
+                        <p>Lab techniques, uncertainty, data analysis, and report writing.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 48 -->
+                <a href="book-detail.html?id=biophysics-and-medical-physics" class="book-card" data-category="mathematical">
+                    <div class="book-cover">
+                        <img src="image/textbooks/biophysics-medical-cover.jpg" alt="Biophysics and Medical Physics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Biophysics and Medical Physics</h3>
+                        <p>Biomechanics, medical imaging, ultrasound, and radiation therapy.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 49 -->
+                <a href="book-detail.html?id=earth-and-atmospheric-physics" class="book-card" data-category="mathematical">
+                    <div class="book-cover">
+                        <img src="image/textbooks/earth-atmospheric-cover.jpg" alt="Earth and Atmospheric Physics Textbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Earth and Atmospheric Physics</h3>
+                        <p>Seismology, geomagnetism, weather systems, and climate physics.</p>
+                    </div>
+                </a>
+
+                <!-- CARD 50 -->
+                <a href="book-detail.html?id=physics-problem-solving-handbook" class="book-card" data-category="mathematical">
+                    <div class="book-cover">
+                        <img src="image/textbooks/problem-solving-cover.jpg" alt="Physics Problem-Solving Handbook">
+                        <div class="download-badge">
+                            <i class="fa-solid fa-download"></i> PDF
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Physics Problem-Solving Handbook</h3>
+                        <p>Key formulas, worked examples, and exam strategies across all topics.</p>
+                    </div>
+                </a>
+
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button id="loadMoreBtn" class="load-more-btn">
+                        Load more <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============= Newsletter / Request Section ============= -->
+        <section class="library-newsletter">
+            <div class="newsletter-container">
+    
+                <!-- LEFT SIDE -->
+                <div class="newsletter-content">
+                    
+                    <div class="nl-badge">
+                        <i class="fa-regular fa-envelope"></i> STAY UPDATED <span class="nl-line"></span>
+                    </div>
+                    <h2>Stay ahead in Physics. <br> <span class="ml-gradient"> All the time, </span> <span class="nl-gradient">Any time.</span></h2>
+                    <p>Subscribe to our newsletter and get the latest textbook updates, research insights, video lessons and more delivered straight to your inbox.</p>
+
+                    <!-- The Form -->
+                    <form class="nl-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                        <div class="nl-input-group">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" placeholder="Enter your e-mail address" required>
+                        </div>
+                        <button type="submit">
+                            <i class="fa-solid fa-paper-plane"></i> Subscribe
+                        </button>
+                    </form>
+
+                    <!-- The Features List -->
+                    <div class="nl-features">
+                        <div class="nl-feature-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <div>
+                                <h4>Latest Updates</h4>
+                                <span>Be the first to know</span>
+                            </div>
+                        </div>
+
+                        <span class="nl-features-gap"></span>
+
+                        <div class="nl-feature-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div>
+                                <h4>Expert Insights</h4>
+                                <span>From top educators</span>
+                            </div>
+                        </div>
+
+                        <span class="nl-features-gap"></span>
+
+                        <div class="nl-feature-item">
+                            <i class="fa-solid fa-bookmark"></i>
+                            <div>
+                                <h4>Exclusive Resources</h4>
+                                <span>Books, videos & more</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE: The Image -->
+                <div class="newsletter-image">
+                    <img src="image/textbooks/newsletter-3d-books.png" alt="Physics 3D Illustration">
+                </div>
+                
+            </div>
+        </section>
+ 
+
+        <!-- Footer Section -->
+        <footer class="physic-footer">
+            <div class="footer-container">
+                <div class="footer-column brand-column">
+                    <h3>Physics Universe</h3>
+                    <p>Mastering the laws that govern the cosmos, one lesson at a time.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="video.html">Video Lessons</a></li>
+                        <li><a href="textbook.html">Textbook Library</a></li>
+                        <li><a href="dashboard.html">Past Questions</a></li>
+                        <li><a href="calculator.html">Physics Calculator</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Get in Touch</h4>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-envelope"></i> support@physicuniverse.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +234 814 841 6639</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Kaduna, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Physics Universe. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="textbook.js"></script>
+</body>
+
+
+<script>
+        // ==========================================
+    // BLOCK 1: Variables & Element Selectors
+    // ==========================================
+    const heroSlider = document.getElementById('heroSlider');
+    const nextSlideBtn = document.getElementById('nextBtn');
+    const prevSlideBtn = document.getElementById('prevBtn');
+    const dots = document.querySelectorAll('.slider-dots .dot');
+
+    const slideWidth = 1462;
+
+    // ==========================================
+    // BLOCK 2: Functions
+    // ==========================================
+
+    // The auto-slide logic
+    function autoSlide() {
+        const maxScroll = heroSlider.scrollWidth - heroSlider.clientWidth;
+        if (heroSlider.scrollLeft >= maxScroll - 10) {
+            // We're at the end, jump back to the start
+            heroSlider.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            // Keep sliding right
+            heroSlider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+        }
+    }
+
+    // Update the active pagination dot
+    function updateDots() {
+        const currentIndex = Math.round(heroSlider.scrollLeft / slideWidth);
+        dots.forEach((dot, index) => {
+            dot.classList.remove('active');
+            if (index === currentIndex) {
+                dot.classList.add('active');
+            }
+        });
+    }
+
+    // Restart the timer (used after user clicks)
+    function resetTimer() {
+        clearInterval(slideTimer);
+        slideTimer = setInterval(autoSlide, 4000);
+    }
+
+    // ==========================================
+    // BLOCK 3: The Timer
+    // ==========================================
+    let slideTimer = setInterval(autoSlide, 4000);   // Every 4 seconds
+
+    // ==========================================
+    // BLOCK 4: Event Listeners
+    // ==========================================
+
+    // Next button
+    nextSlideBtn.addEventListener('click', () => {
+        heroSlider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+        resetTimer();
+    });
+
+    // Prev button
+    prevSlideBtn.addEventListener('click', () => {
+        heroSlider.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+        resetTimer();
+    });
+
+    
+    heroSlider.addEventListener('scroll', updateDots);
+
+    // Click a dot to jump to that slide
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            heroSlider.scrollTo({
+                left: index * slideWidth,
+                behavior: 'smooth'
+            });
+            resetTimer();
+        });
+    });
+
+    // Pause on hover, resume on leave
+    heroSlider.addEventListener('mouseenter', () => clearInterval(slideTimer));
+    heroSlider.addEventListener('mouseleave', () => slideTimer = setInterval(autoSlide, 4000));
+
+    updateDots();
+</script>
+</html>

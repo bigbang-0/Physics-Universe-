@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Physic Universe</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="image/logo.png" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cinzel:wght@400..900&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Inter:wght@400;700&family=Parisienne&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS rules required for Vanta background -->
+        <style>
+            #vanta-bg {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                z-index: -1;
+                pointer-events: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header id="vanta-bg">
+            <section class="nav-container">
+                <nav>
+                    <a class="text-logo" href="index.html">
+                        <img src="image/logo.png" alt="" />
+                        <h3>Physics Universe</h3>
+                    </a>
+
+                    <div class="primary-nav">
+                        <a href="index.html">Home</a>
+                        <a href="login.html">Courses</a>
+                        <a href="">About</a>
+                        <a href="#footer">Contact</a>
+                    </div>
+
+                    <div class="secondary-nav">
+                        <a class="login-btn" href="login.html">login</a>
+                        <a class="Signup-btn" href="signup.html">Signup</a>
+                    </div>
+                </nav>
+            </section>
+
+            <section class="header-text">
+                <div>
+                    <h1>The BigBang</h1>
+                    <p>
+                        Let's explore the creation of the universe together, from the beginning of time. We will journey
+                        through the fundamental laws that govern matter, energy, space, and the cosmos. Whether you are
+                        just starting out or looking to deepen your understanding, this is the perfect place to begin.
+                    </p>
+                    <a href="login.html">Check Our Courses</a>
+                </div>
+            </section>
+        </header>
+
+        <div class="bottom-box-flex">
+            <a href="login.html" class="bottom-box">
+                <h1>🎬 Video Lessons</h1>
+                <div>
+                    <p>
+                        Watch detailed, step-by-step breakdowns of complex physics concepts, from kinematics to quantum
+                        mechanics.
+                    </p>
+                </div>
+                <div id="join">Watch Videos</div>
+            </a>
+
+            <a href="login.html" class="bottom-box">
+                <h1>🧮 Interactive Calculator</h1>
+                <div>
+                    <p>
+                        Solve for Force, Velocity, and Acceleration instantly with our <br />built-in physics problem
+                        <br />solver.
+                    </p>
+                </div>
+                <div id="join">Try Calculator</div>
+            </a>
+
+            <a href="login.html" class="bottom-box">
+                <h1>📚 Textbook Library</h1>
+                <div>
+                    <p>
+                        Download comprehensive, semester-ready physics notes and essential textbooks for focused <br />
+                        offline study.
+                    </p>
+                </div>
+                <div id="join">Download PDFs</div>
+            </a>
+        </div>
+
+        <!-- Scroll Page -->
+        <div class="scroll-container">
+            <div class="scroll-page">
+                <section class="left-text">
+                    <h1>Explore the Grand Design of Space and Time</h1>
+                    <p>
+                        Explore the fundamental forces that shape our reality, from the tiniest atom to the grandest
+                        galaxies.
+                    </p>
+                </section>
+
+                <section class="scroll-area-btn">
+                    <section class="scroll-area" id="physicsSlider">
+                        <a href="login.html">
+                            <div class="image"><img src="image/s7.png" alt="" /></div>
+                            <div class="scroll-area-text">
+                                <h3>Astrophysics</h3>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="login.html">
+                            <div class="image"><img src="image/s8.png" alt="" /></div>
+                            <div class="scroll-area-text">
+                                <h3>Nuclear Physics</h3>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="login.html">
+                            <div class="image"><img src="image/s9.png" alt="" /></div>
+                            <div class="scroll-area-text">
+                                <h3>Relativity</h3>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="login.html">
+                            <div class="image"><img src="image/s4.png" alt="" /></div>
+                            <div class="scroll-area-text">
+                                <h3>Quantum Physics</h3>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="login.html">
+                            <div class="image"><img src="image/s6.png" alt="" /></div>
+                            <div class="scroll-area-text">
+                                <h3>Mechanics</h3>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="login.html">
+                            <div class="image"><img src="image/s1.png" alt="" /></div>
+                            <div class="scroll-area-text">
+                                <h3>Kinematics</h3>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="login.html">
+                            <div class="image"><img src="image/s2.png" alt="" /></div>
+                            <div class="scroll-area-text">
+                                <h3>Waves & Optics</h3>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="login.html">
+                            <div class="image"><img src="image/s5.png" alt="" /></div>
+                            <div class="scroll-area-text">
+                                <h3>Electromagnetism</h3>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                        <a href="login.html ">
+                            <div class="image"><img src="image/s3.png" alt="" /></div>
+                            <div class="scroll-area-text">
+                                <h3>Thermodynamics</h3>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </section>
+
+                    <section class="button">
+                        <button class="prev-btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <div class="pagination-dot">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <button class="next-btn"><i class="fa-solid fa-angle-right"></i></button>
+                    </section>
+                </section>
+            </div>
+        </div>
+
+        <!-- Get Started -->
+        <div class="get-started">
+            <section class="left-side">
+                <h1>
+                    Turn big learning <br />
+                    goals into real <br />results.
+                </h1>
+                <p>
+                    Physics Universe helps schools personalize learning, strengthen core skills, and support every
+                    student, whether they’re catching up, keeping pace,
+                    <br />or are ready to move ahead.
+                </p>
+                <img src="image/get-started1.png" alt="" />
+            </section>
+
+            <section class="right-side">
+                <h1>Get started as a...</h1>
+
+                <a class="right-side-border" href="signup.html">
+                    <section>
+                        <h2>Senior Secondary Student</h2>
+                        <p>Master the basics of mechanics and waves.</p>
+                    </section>
+                    <section>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </section>
+                </a>
+
+                <a class="right-side-border" href="signup.html">
+                    <section>
+                        <h2>B.sc Student</h2>
+                        <p>Master calculus-based mechanics and more</p>
+                    </section>
+                    <section>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </section>
+                </a>
+
+                <a class="right-side-border" href="signup.html">
+                    <section>
+                        <h2>M.sc Student</h2>
+                        <p>Dive into quantum mechanics and relativity.</p>
+                    </section>
+                    <section>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </section>
+                </a>
+
+                <h3>Already have a Physics Universe account? <a href="login.html">Log in</a></h3>
+            </section>
+        </div>
+
+        <!-- Explore Our Content -->
+        <div class="content">
+            <h1>Explore Our Content</h1>
+            <p>Browse our courses, textbooks, and problem sets to enhance your learning.</p>
+
+            <section class="explore-container">
+                <div class="pills-container">
+                    <a href="login.html" class="pill"><i class="fa-solid fa-graduation-cap"></i> Courses</a>
+                    <a href="login.html" class="pill"><i class="fa-solid fa-file-pen"></i> Exam Prep</a>
+                    <a href="login.html" class="pill"><i class="fa-solid fa-square-root-variable"></i> Problem Sets</a>
+                    <a href="login.html" class="pill"
+                        ><i class="fa-solid fa-calculator"></i> Past Question Calculator</a
+                    >
+                    <a href="login.html" class="pill"><i class="fa-solid fa-video"></i> Video Lessons</a>
+                    <a href="login.html" class="pill"><i class="fa-solid fa-book"></i> Textbook Library</a>
+                    <a href="login.html" class="pill"><i class="fa-solid fa-gears"></i> Classical Mechanics</a>
+                    <a href="login.html" class="pill"><i class="fa-solid fa-atom"></i> Quantum Physics</a>
+                    <a href="login.html" class="pill"><i class="fa-solid fa-bolt"></i> Electromagnetism</a>
+                    <a href="login.html" class="pill"><i class="fa-solid fa-fire"></i> Thermodynamics</a>
+                    <a href="login.html" class="pill"><i class="fa-solid fa-rocket"></i> Astrophysics</a>
+                    <a href="login.html" class="pill"
+                        ><i class="fa-solid fa-file-circle-question"></i> Past Questions</a
+                    >
+                </div>
+            </section>
+
+            <section class="courses">
+                <div class="courses-text">Looking for a specific topic? Search our vast collection of courses now.</div>
+
+                <form class="inputs">
+                    <div class="input-1">
+                        <section>
+                            <input id="Secondary" type="radio" name="radio" value="Secondary" required />
+                            <label for="Secondary">Secondary</label>
+                        </section>
+                        <section>
+                            <input id="Undergraduate" type="radio" name="radio" value="Undergraduate" required />
+                            <label for="Undergraduate">Undergraduate</label>
+                        </section>
+                        <section>
+                            <input id="Graduate" type="radio" value="Graduate" name="radio" />
+                            <label for="Graduate">Graduate</label>
+                        </section>
+                    </div>
+
+                    <div class="input-2">
+                        <input id="Search" type="text" name="text" placeholder="Search" required />
+                        <button type="submit">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <!-- How It Works -->
+        <div class="work-flow">
+            <section class="work-flow-container">
+                <div class="work-flow-text">
+                    <h1>How it works</h1>
+                    <h2>Real Progress Starts With How Students Learn.</h2>
+                    <p>
+                        Students learn when they can practice consistently, get feedback <br />
+                        right away, and get support when it matters most. Physic Universe <br />
+                        makes that possible so students stay motivated and keep <br />
+                        moving forward, no matter where they are in their learning.
+                    </p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-check"></i> Practice builds understanding through standards-aligned
+                            skills
+                        </li>
+                        <li><i class="fa-solid fa-check"></i> Feedback keeps students moving when they get stuck</li>
+                        <li><i class="fa-solid fa-check"></i> Teacher insights show what students need next</li>
+                    </ul>
+                </div>
+                <img src="image/workflow1.png" alt="" />
+            </section>
+
+            <section class="work-flow-container-2">
+                <img src="image/workflow2.png" alt="" />
+                <div class="work-flow-text">
+                    <h1>Real results</h1>
+                    <h2>Every Courses Counts.</h2>
+                    <p>
+                        Each Courses a student masters builds on the last, helping them close <br />gaps, build
+                        confidence, and move forward, whether they’re <br />
+                        catching up or advancing. That progress is measurable,<br />
+                        and it adds up.
+                    </p>
+                    <ul>
+                        <li><i class="fa-solid fa-square-check"></i> 1 Courses mastered → +0.5 percentage points</li>
+                        <li><i class="fa-solid fa-square-check"></i> 10 Courses mastered → +5 percentage points</li>
+                        <li><i class="fa-solid fa-square-check"></i> 60 Courses mastered → +30 percentage points</li>
+                    </ul>
+                    <a class="work-flow-btn" href="#testimony">See Our Impact</a>
+                </div>
+            </section>
+
+            <section class="horizontal-ray">
+                <div class="horizontal-ray-flex">
+                    <span>
+                        <a href=""> <i class="fa-solid fa-gift"></i> Completely Free</a></span
+                    >
+                    <span>
+                        <a href=""> <i class="fa-solid fa-user-graduate"></i> 50K+ Active Students</a></span
+                    >
+                    <span>
+                        <a href=""> <i class="fa-solid fa-circle-play"></i> 500+ Video Lessons</a></span
+                    >
+                    <span>
+                        <a href=""> <i class="fa-solid fa-square-root-variable"></i> 1M+ Problems Solved</a></span
+                    >
+                    <span>
+                        <a href=""> <i class="fa-solid fa-book-open-reader"></i> 50+ Textbooks Downloaded</a></span
+                    >
+
+                    <span>
+                        <a href=""> <i class="fa-solid fa-gift"></i> Completely Free</a></span
+                    >
+                    <span>
+                        <a href=""> <i class="fa-solid fa-user-graduate"></i> 50K+ Active Students</a></span
+                    >
+                    <span>
+                        <a href=""> <i class="fa-solid fa-circle-play"></i> 500+ Video Lessons</a></span
+                    >
+                    <span>
+                        <a href=""> <i class="fa-solid fa-square-root-variable"></i> 1M+ Problems Solved</a></span
+                    >
+                    <span>
+                        <a href=""> <i class="fa-solid fa-book-open-reader"></i> 50+ Textbooks Downloaded</a></span
+                    >
+                </div>
+            </section>
+        </div>
+
+        <!-- Coat and Testimonys -->
+        <div class="CT-container">
+            <section class="coat">
+                <h1>Word of Encouragement from our <br />Head of Department</h1>
+                <div class="coat-flex">
+                    <section class="coat-left">
+                        <img src="image/me.jpg" alt="" />
+                    </section>
+                    <section class="coat-right">
+                        <div>
+                            <h2>Perseverance Unlocks the Universe</h2>
+                            <p>
+                                "Physics is not just a subject; it is the language of the universe. Remember,<br />
+                                every great physicist started with a single question. Embrace the <br />challenges, for
+                                they are the stepping stones to true <br />understanding. Your journey has just begun."
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Dr Praise Toluwashe</h3>
+                            <p>Head of Department, Physics</p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <section class="testimony" id="testimony">
+                <h1>
+                    Join Other Transforming Their Lives <br />
+                    Through Learning
+                </h1>
+
+                <div class="testimony-flex">
+                    <a class="testimony-border" href="login.html">
+                        <div class="testimony-border-top">
+                            <h2>"</h2>
+                            <p>
+                                "Building this platform taught me more than just web development. By coding out the
+                                lessons and visualizing astrophysics concepts like black holes and relativity, I
+                                deepened my own understanding of the cosmos and shared it with others."
+                            </p>
+                        </div>
+                        <div class="testimony-border-bottom">
+                            <img src="image/me.jpg" alt="" />
+                            <section>
+                                <h3>Praise T.</h3>
+                                <p>Astrophysics</p>
+                            </section>
+                        </div>
+                        <div class="view-cousrses">
+                            <p>View Astrophysics Course</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </a>
+
+                    <a class="testimony-border" href="login.html">
+                        <div class="testimony-border-top">
+                            <h2>"</h2>
+                            <p>
+                                "The interactive diagrams for electromagnetism are the best I've seen. It feels like I'm
+                                experimenting in a real lab, but right from my laptop."
+                            </p>
+                        </div>
+                        <div class="testimony-border-bottom">
+                            <img src="image/me.jpg" alt="" />
+                            <section>
+                                <h3>Praise T.</h3>
+                                <p>Electromagnetism</p>
+                            </section>
+                        </div>
+                        <div class="view-cousrses">
+                            <p>View Electromagnetism Course</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </a>
+
+                    <a class="testimony-border" href="login.html">
+                        <div class="testimony-border-top">
+                            <h2>"</h2>
+                            <p>
+                                "I always found quantum mechanics too abstract. The step-by-step breakdowns made it
+                                approachable, and I finally passed my midterm!"
+                            </p>
+                        </div>
+                        <div class="testimony-border-bottom">
+                            <img src="image/me.jpg" alt="" />
+                            <section>
+                                <h3>Praise T.</h3>
+                                <p>Quantum Physics</p>
+                            </section>
+                        </div>
+                        <div class="view-cousrses">
+                            <p>View Quantum Physics Course</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </a>
+
+                    <a class="testimony-border" href="login.html">
+                        <div class="testimony-border-top">
+                            <h2>"</h2>
+                            <p>
+                                "The kinematics videos finally made it click. I went from dreading tests to actually
+                                enjoying solving them. The examples were so clear, I felt like I was doing real
+                                physics!"
+                            </p>
+                        </div>
+                        <div class="testimony-border-bottom">
+                            <img src="image/me.jpg" alt="" />
+                            <section>
+                                <h3>Praise T.</h3>
+                                <p>Mechanics</p>
+                            </section>
+                        </div>
+                        <div class="view-cousrses">
+                            <p>View Mechanics Course</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Frequently Asked Questions -->
+        <div class="Q-A">
+            <section class="top">
+                <h1>Frequently asked questions, answered.</h1>
+            </section>
+
+            <section class="Q-A-flex">
+                <div class="Q-A-border">
+                    <div class="question">
+                        <h2>Is Physics Universe really free?</h2>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <p class="answer">
+                        Yes. <br />
+                        Physics Universe is always free for all interested in physics.
+                    </p>
+                </div>
+
+                <div class="Q-A-border">
+                    <div class="question">
+                        <h2>Do I get a certificate upon completion?</h2>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <p class="answer">
+                        Yes! <br />
+                        Once you complete all the modules and pass the final assessment for a course, you will receive a
+                        verifiable digital certificate of completion. You can easily share this on LinkedIn, add it to
+                        your CV, or print it for your records.
+                    </p>
+                </div>
+
+                <div class="Q-A-border">
+                    <div class="question">
+                        <h2>How does Physics Universe support students at different levels?</h2>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <p class="answer">
+                        Physics Universe helps students start where they are and move forward at their own pace. <br />
+                        <br />
+                        Students who need extra support can build foundational skills step by step, while students who
+                        are ready can continue advancing, so every l earner makes progress.
+                    </p>
+                </div>
+
+                <div class="Q-A-border">
+                    <div class="question">
+                        <h2>Does Physics Universe actually improve learning outcomes?</h2>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <p class="answer">
+                        Yes. Research shows that students who practice more skills on Physics Universe see greater
+                        academic gains. <br />
+                        <br />
+                        Students in Khan Academy district partnerships are 6× more likely to reach 60 or more skills to
+                        proficiency, which can result in a 30 percentage point gain on standardized tests. As students
+                        build skills over time, their progress compounds—helping them close gaps and reach proficiency.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="physic-footer" id="footer">
+            <div class="footer-container">
+                <div class="footer-column brand-column">
+                    <h3>Physics Universe</h3>
+                    <p>Mastering the laws that govern the cosmos, one lesson at a time.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="login.html">Courses</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="login.html">Video Lessons</a></li>
+                        <li><a href="login.html">Textbook Library</a></li>
+                        <li><a href="login.html">Past Questions</a></li>
+                        <li><a href="login.html">Physics Calculator</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Get in Touch</h4>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-envelope"></i> support@physicuniverse.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +234 814 841 6639</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Kaduna, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Physics Universe. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <div class="back-to-top">
+            <a href="#vanta-bg"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+
+        <!-- Load Three.js and Vanta Globe -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    </body>
+
+    <script>
+        // Initialize Vanta NET effect
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.0,
+            minWidth: 200.0,
+            scale: 1.0,
+            scaleMobile: 1.0,
+            color: 0x4625cf,
+            backgroundColor: 0x20202,
+        });
+
+        // Slider Navigation
+        const slider = document.getElementById("physicsSlider");
+        const nextBtn = document.querySelector(".next-btn");
+        const prevBtn = document.querySelector(".prev-btn");
+
+        nextBtn.addEventListener("click", () => {
+            slider.scrollBy({ left: 1020, behavior: "smooth" });
+        });
+
+        prevBtn.addEventListener("click", () => {
+            slider.scrollBy({ left: -1020, behavior: "smooth" });
+        });
+
+        // Active Pagination Dot
+        const dot = document.querySelectorAll(".pagination-dot span");
+
+        function updateDots() {
+            const currentIndex = Math.round(slider.scrollLeft / 1020);
+            dot.forEach((d, index) => {
+                d.classList.remove("active");
+                if (index === currentIndex) {
+                    d.classList.add("active");
+                }
+            });
+        }
+
+        slider.addEventListener("scroll", updateDots);
+        updateDots();
+
+        // FAQ Section Toggle
+        const questions = document.querySelectorAll(".question");
+        questions.forEach((question) => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle("active");
+                question.classList.toggle("active");
+                answer.style.maxHeight = answer.classList.contains("active") ? answer.scrollHeight + "px" : null;
+            });
+        });
+
+        // Bact To Top Button
+        document.addEventListener("DOMContentLoaded", function () {
+            var scrollBtn = document.querySelector(".back-to-top");
+
+            window.onscroll = function () {
+                if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+                    scrollBtn.style.opacity = "1";
+                    scrollBtn.style.visibility = "visible";
+                } else {
+                    scrollBtn.style.opacity = "0";
+                    scrollBtn.style.visibility = "hidden";
+                }
+            };
+        });
+    </script>
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Book Details</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" href="image/logo.png">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cinzel:wght@400..900&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Inter:wght@400;700&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--  ============= Header containing the Top Nav Bar ====================== -->
+    <header class="top-navbar">
+        <a class="logo" href="index.html">
+            <img src="image/logo.png" alt="">
+            <h1>Physic Universe</h1>
+        </a>
+
+        <form class="form" action="">
+            <div class="search-wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="Search" type="text" name="text" placeholder="Search topics, courses, or concepts...." required>
+            </div>
+        </form>
+
+        <ul>
+            <li class="dropdown-container">
+                <a href="hero.html" class="dropdown-tittle"><i id="web" class="fa-solid fa-globe"></i> English <i id="thearrow" class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="hero.html">English</a></li>
+                    <li><a href="hero.html">Español</a></li>
+                    <li><a href="hero.html">中文</a></li>
+                    <li><a href="hero.html">हिन्दी</a></li>
+                    <li><a href="hero.html">Français</a></li>
+                    <li><a href="hero.html">العربية</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="last-nav">
+            <a class="cal" href="calculator.html"><i class="fa-light fa-calculator"></i></a>
+
+            <section class="profile">
+                <img src="image/Dashboard/avater.png" alt="">
+
+                <div>
+                    <p>Welcome Back,</p>
+                    <h3>BigBang</h3>
+                </div>
+            </section>
+
+            <a class="logout" href="login.html">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> 
+                <h4>Log out</h4>
+            </a>
+        </div>
+    </header>
+    
+    <!-- ======================= Slide Bar Navigation ================== -->
+    <aside class="sidebar">
+        <section class="sidebar-holder">
+            <div class="primary-data">
+                <a href="index.html"><i class="fa-solid fa-house"></i> <p>Home</p></a>
+                <a href=""><i class="fa-solid fa-user"></i> <p>Pofile</p></a>
+                <a href=""><i class="fa-solid fa-user-pen"></i><p>Account Bio</p></a>
+            </div>
+
+            <div class="secondary-data">
+                <ul>
+                    <li class="SB-dropdown-container active" >
+                        <a href="dashboard.html" class="SB-dropdown-tittle"><i class="fa-solid fa-graduation-cap unqiue-icon"></i> Courses <i class="fa-solid fa-angle-down arrow-icon"></i></a>
+                        <ul class="SB-dropdown-menu">
+                            <li><a href="hero.html">Secondary School Courses</a></li>
+                            <li><a href="hero.html">B.sc Courses</a></li>
+                            <li><a href="hero.html">M.sc Courses</a></li>
+                            <li><a href="hero.html">Past Question</a></li>
+                            <li><a href="hero.html">Problem Set</a></li>
+                            <li><a href="hero.html">Exam Prep</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                
+                <ul>
+                    <li class="SB-dropdown-container">
+                        <a href="textbook.html" class="SB-dropdown-tittle"><i class="fa-duotone fa-solid fa-books unqiue-icon"></i> Textboox Library <i class="fa-solid fa-angle-down arrow-icon"></i></a>
+                        <ul class="SB-dropdown-menu">
+                            <li><a href="hero.html">Secondary School TextBooks</a></li>
+                            <li><a href="hero.html">B.sc TextBooks</a></li>
+                            <li><a href="hero.html">M.sc TextBooks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <ul>
+                    <li class="SB-dropdown-container">
+                        <a href="video.html" class="SB-dropdown-tittle"><i class="fa-brands fa-youtube unqiue-icon"></i> Video Lessons <i class="fa-solid fa-angle-down arrow-icon"></i></a>
+                        <ul class="SB-dropdown-menu">
+                            <li><a href="hero.html">Secondary School Videos Tutorials</a></li>
+                            <li><a href="hero.html">B.sc Video Tutorials</a></li>
+                            <li><a href="hero.html">M.sc Video Tutorials</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <ul>
+                    <li class="SB-dropdown-container">
+                        <a href="calculator.html" class="SB-dropdown-tittle"><i class="fa-light fa-calculator unqiue-icon"></i> Calculator </i></a>
+                    </li>
+                </ul>
+
+
+                <ul>
+                    <li class="SB-dropdown-container">
+                        <a href="progess.html" class="SB-dropdown-tittle"><i class="fa-solid fa-chart-simple unqiue-icon"></i> My Progress </i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="terms">
+                <a href="index.html">Home</a>
+                <p>|</p>
+                <a href="">Contact</a>
+                <p>|</p>
+                <a href="">Terms</a>
+            </div>
+        </section>
+    </aside>
+    
+
+    <!-- /* ============================== Dashboard Main Content ====================== */ -->
+    <main class="dashboard-content">
+        <!-- /* ========== Slider Hero Images ================ */ -->
+        <section class="slider">
+            <div id="heroSlider" class="slider-flex">
+                <figure class="slider-container">
+                    <img src="image/Dashboard/library-bg1.jpg" alt="">
+                    <!-- <figcaption>
+                        <h1>learn Physics <br> <span>Understand the Universe</span></h1>
+                        <p>Build your skills, master key concepts, and explore the law <br>that shape our world and beyond.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/library-bg6.png" alt="">
+                    <!-- <figcaption>
+                        <h1>Where Motion <br> <span>Meets Momentum.</span></h1>
+                        <p>Explore the elegant physics of collisions, energy transfer, and <br> conservation laws that govern every interaction in the universe.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/library-bg4.jfif" alt="">
+                    <!-- <figcaption>
+                        <h1>Launch Your <br> <span>Physics Journey.</span></h1>
+                        <p>From the first principles of motion to the edge of the cosmos, <br>take off with lessons designed to make physics click.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/library-bg5.png" alt="">
+                    <!-- <figcaption>
+                        <h1>Master the <br> <span>Forces of Nature.</span></h1>
+                        <p>Dive into the mechanics of gravity, motion, and <br>energy that shape every star, planet, and galaxy in existence.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+
+                <figure class="slider-container">
+                    <img src="image/Dashboard/library.bg-2.png" alt="">
+                    <!-- <figcaption>
+                        <h1>Explore the <br> <span>Laws of the Cosmos.</span></h1>
+                        <p>From E = mc² to Newton's laws, understand the fundamental <br> equations that govern everything in our universe.</p>
+                        <a href=""><h2>Explore Courses</h2> <i class="fa-solid fa-arrow-right"></i></a>
+                    </figcaption> -->
+                </figure>
+            </div>
+
+            <div class="slider-btn">
+                <button id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+
+
+        <!--=================== My Stats ==================  -->
+        <section class="horizontal-ray">
+            <div class="horizontal-ray-flex">
+                <span> <a href=""> <i class="fa-solid fa-download"></i> 12 Books Downloaded</a></span> <span><a href=""><i class="fa-solid fa-book"></i> 50+ Textbooks Available</a></span> <span><a href=""><i class="fa-solid fa-file-pdf"></i> PDF Format</a></span> <span><a href=""><i class="fa-solid fa-gift"></i> 100% Free Access</a></span>
+
+                <span> <a href=""> <i class="fa-solid fa-download"></i> 12 Books Downloaded</a></span> <span><a href=""><i class="fa-solid fa-book"></i> 50+ Textbooks Available</a></span> <span><a href=""><i class="fa-solid fa-file-pdf"></i> PDF Format</a></span> <span><a href=""><i class="fa-solid fa-gift"></i> 100% Free Access</a></span>
+            </div>
+        </section>
+
+
+    <section class="book-detail-section">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="textbook.html">Textbook Library</a> <i class="fa-solid fa-chevron-right"></i> 
+        <span id="breadcrumb-title">Book Title</span>
+    </div>
+
+    <div class="book-detail-container">
+        <!-- LEFT: The Big Cover -->
+        <div class="detail-left">
+            <div class="detail-cover-wrapper">
+                <img id="detail-cover-img" src="image/textbooks/placeholder.png" alt="Cover">
+            </div>
+        </div>
+
+        <!-- RIGHT: Info & Download -->
+        <div class="detail-right">
+            <h1 id="detail-title">Book Title</h1>
+            <p class="author" id="detail-author">By Physic Universe Press</p>
+
+            <!-- Action Buttons -->
+            <div class="detail-actions">
+                <a href="#" id="download-btn" class="btn-download" download>
+                    <i class="fa-solid fa-download"></i> Download PDF
+                </a>
+                <a href="#" class="btn-read">
+                    <i class="fa-solid fa-book-open"></i> Read Online
+                </a>
+            </div>
+
+            <!-- Description -->
+            <div class="detail-description">
+                <h3>About this book</h3>
+                <p id="detail-desc">Book description goes here...</p>
+            </div>
+
+            <!-- Metadata Grid -->
+            <div class="detail-meta">
+                <div><span>Subject:</span> <strong id="meta-subject">Physics</strong></div>
+                <div><span>Level:</span> <strong id="meta-level">University</strong></div>
+                <div><span>Format:</span> <strong>PDF</strong></div>
+                <div><span>File Size:</span> <strong id="meta-size">2.4 MB</strong></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM: Related Books -->
+    
+<div class="related-books">
+    <h2>You may also like</h2>
+    <div class="related-grid" id="related-container">
+        <!-- JavaScript will automatically inject the cards here -->
+    </div>
+</div>
+</section>
+
+        <!-- Footer Section -->
+        <footer class="physic-footer">
+            <div class="footer-container">
+                <div class="footer-column brand-column">
+                    <h3>Physics Universe</h3>
+                    <p>Mastering the laws that govern the cosmos, one lesson at a time.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dashboard.html">Courses</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="video.html">Video Lessons</a></li>
+                        <li><a href="textbook.html">Textbook Library</a></li>
+                        <li><a href="dashboard.html">Past Questions</a></li>
+                        <li><a href="calculator.html">Physics Calculator</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Get in Touch</h4>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-envelope"></i> support@physicuniverse.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +234 814 841 6639</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Kaduna, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Physics Universe. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="book-detail.js"></script>
+</body>
+
+
+<script>
+        // ==========================================
+    // BLOCK 1: Variables & Element Selectors
+    // ==========================================
+    const heroSlider = document.getElementById('heroSlider');
+    const nextSlideBtn = document.getElementById('nextBtn');
+    const prevSlideBtn = document.getElementById('prevBtn');
+    const dots = document.querySelectorAll('.slider-dots .dot');
+
+    const slideWidth = 1462;
+
+    // ==========================================
+    // BLOCK 2: Functions
+    // ==========================================
+
+    // The auto-slide logic
+    function autoSlide() {
+        const maxScroll = heroSlider.scrollWidth - heroSlider.clientWidth;
+        if (heroSlider.scrollLeft >= maxScroll - 10) {
+            // We're at the end, jump back to the start
+            heroSlider.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            // Keep sliding right
+            heroSlider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+        }
+    }
+
+    // Update the active pagination dot
+    function updateDots() {
+        const currentIndex = Math.round(heroSlider.scrollLeft / slideWidth);
+        dots.forEach((dot, index) => {
+            dot.classList.remove('active');
+            if (index === currentIndex) {
+                dot.classList.add('active');
+            }
+        });
+    }
+
+    // Restart the timer (used after user clicks)
+    function resetTimer() {
+        clearInterval(slideTimer);
+        slideTimer = setInterval(autoSlide, 4000);
+    }
+
+    // ==========================================
+    // BLOCK 3: The Timer
+    // ==========================================
+    let slideTimer = setInterval(autoSlide, 4000);   // Every 4 seconds
+
+    // ==========================================
+    // BLOCK 4: Event Listeners
+    // ==========================================
+
+    // Next button
+    nextSlideBtn.addEventListener('click', () => {
+        heroSlider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+        resetTimer();
+    });
+
+    // Prev button
+    prevSlideBtn.addEventListener('click', () => {
+        heroSlider.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+        resetTimer();
+    });
+
+    
+    heroSlider.addEventListener('scroll', updateDots);
+
+    // Click a dot to jump to that slide
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            heroSlider.scrollTo({
+                left: index * slideWidth,
+                behavior: 'smooth'
+            });
+            resetTimer();
+        });
+    });
+
+    // Pause on hover, resume on leave
+    heroSlider.addEventListener('mouseenter', () => clearInterval(slideTimer));
+    heroSlider.addEventListener('mouseleave', () => slideTimer = setInterval(autoSlide, 4000));
+
+    updateDots();
+</script>
+</html>
